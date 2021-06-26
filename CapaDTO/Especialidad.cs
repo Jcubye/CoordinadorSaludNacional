@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CapaDTO
 {
-    class Especialidad
+    public class Especialidad
     {
         private int id;
         private string nombre;

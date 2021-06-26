@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CapaDTO
 {
-    class Videollamada
+    public class Videollamada
     {
         private int id;
         private string disponibilidad;

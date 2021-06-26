@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CapaDTO
 {
-    class Hospitalizacion
+    public class Hospitalizacion
     {
         private string id;
         private string fecha_ingreso;

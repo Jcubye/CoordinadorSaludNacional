@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CapaDTO
 {
-    class ESP_RRHH
+    public class ESP_RRHH
     {
         private int id;
         private int rrhh_id;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CapaDTO
 {
-    class Tutor
+    public class Tutor
     {
         private int id;
         private string rut;

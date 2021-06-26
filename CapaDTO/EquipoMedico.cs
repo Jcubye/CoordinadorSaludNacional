@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CapaDTO
 {
-    class EquipoMedico
+    public class EquipoMedico
     {
         private int id;
         private string responsable;

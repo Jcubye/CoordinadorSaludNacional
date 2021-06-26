@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CapaDTO
 {
-    class Ubicacion
+    public class Ubicacion
     {
         private int id;
         private int sala;

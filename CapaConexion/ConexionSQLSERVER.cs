@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace CapaConexion
 {
-    class ConexionSQLSERVER
+    public class ConexionSQLSERVER
     {
         //instance values
         private string nombreBaseDatos;

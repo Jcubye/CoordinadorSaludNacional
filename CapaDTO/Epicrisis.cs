@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CapaDTO
 {
-    class Epicrisis
+    public class Epicrisis
     {
         private int id;
         private string fecha;

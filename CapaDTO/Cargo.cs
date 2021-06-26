@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CapaDTO
 {
-    class Cargo
+    public class Cargo
     {
         private int id;
         private string nombre;
