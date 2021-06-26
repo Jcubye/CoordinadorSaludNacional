@@ -1,0 +1,11 @@
+C:\Users\Jcubye\Desktop\Integración de Plataformas\CoordinadorSaludNacional\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
+C:\Users\Jcubye\Desktop\Integración de Plataformas\CoordinadorSaludNacional\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\Jcubye\Desktop\Integración de Plataformas\CoordinadorSaludNacional\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\CoordinadorSaludNacional\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\Jcubye\Desktop\Integración de Plataformas\CoordinadorSaludNacional\CapaNegocio\bin\Debug\CapaConexion.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\CoordinadorSaludNacional\CapaNegocio\bin\Debug\CapaDTO.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\CoordinadorSaludNacional\CapaNegocio\bin\Debug\CapaConexion.pdb
+C:\Users\Jcubye\Desktop\Integración de Plataformas\CoordinadorSaludNacional\CapaNegocio\bin\Debug\CapaDTO.pdb
+C:\Users\Jcubye\Desktop\Integración de Plataformas\CoordinadorSaludNacional\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+C:\Users\Jcubye\Desktop\Integración de Plataformas\CoordinadorSaludNacional\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\Jcubye\Desktop\Integración de Plataformas\CoordinadorSaludNacional\CapaNegocio\obj\Debug\CapaNegocio.pdb

@@ -87,10 +87,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CapaConexion\CapaConexion.csproj">
-      <Project>{d2853a79-02c4-42ac-9605-f431ea505317}</Project>
-      <Name>CapaConexion</Name>
-    </ProjectReference>
     <ProjectReference Include="..\CapaDTO\CapaDTO.csproj">
       <Project>{8fc3013c-ae88-4029-9fb5-2a7f0ab8c241}</Project>
       <Name>CapaDTO</Name>

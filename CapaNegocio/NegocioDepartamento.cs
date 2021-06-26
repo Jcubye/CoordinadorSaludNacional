@@ -17,7 +17,7 @@ namespace CapaNegocio
         public void configurarConexion()
         {
             this.Conec.NombreBaseDatos = "LookAtMe";
-            this.Conec.CadenaConexion = "Data Source=LAPTOP-G7NSK0PF;Initial Catalog=LookAtMe;Integrated Security=True":
+            this.Conec.CadenaConexion = "Data Source=LAPTOP-G7NSK0PF;Initial Catalog=LookAtMe;Integrated Security=True";
         }
         public void insertarDepartamento(Departamento departamento)
         {

@@ -1,0 +1,4 @@
+C:\Users\Jcubye\Desktop\Integración de Plataformas\CoordinadorSaludNacional\CapaGUI\obj\Debug\CapaGUI.csproj.AssemblyReference.cache
+C:\Users\Jcubye\Desktop\Integración de Plataformas\CoordinadorSaludNacional\CapaGUI\obj\Debug\CapaGUI.Properties.Resources.resources
+C:\Users\Jcubye\Desktop\Integración de Plataformas\CoordinadorSaludNacional\CapaGUI\obj\Debug\CapaGUI.csproj.GenerateResource.cache
+C:\Users\Jcubye\Desktop\Integración de Plataformas\CoordinadorSaludNacional\CapaGUI\obj\Debug\CapaGUI.csproj.CoreCompileInputs.cache
