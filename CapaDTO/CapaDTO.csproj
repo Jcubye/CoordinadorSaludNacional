@@ -41,7 +41,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Articulo.cs" />
+    <Compile Include="Cargo.cs" />
+    <Compile Include="Departamento.cs" />
+    <Compile Include="Epicrisis.cs" />
+    <Compile Include="EquipoMedico.cs" />
+    <Compile Include="Especialidad.cs" />
+    <Compile Include="ESP_RRHH.cs" />
+    <Compile Include="Hospitalizacion.cs" />
+    <Compile Include="Paciente.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RRHH.cs" />
+    <Compile Include="Stock.cs" />
+    <Compile Include="Tutor.cs" />
+    <Compile Include="Ubicacion.cs" />
+    <Compile Include="Videollamada.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

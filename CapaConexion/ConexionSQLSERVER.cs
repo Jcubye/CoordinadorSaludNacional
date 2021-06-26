@@ -141,21 +141,21 @@ namespace CapaConexion
         }//Fin EsSelect
 
         ////Testing
-        public static void Main(String[] args)
-        {
-            ConexionSQLSERVER connect = new ConexionSQLSERVER();
-            connect.NombreBaseDatos = "LookAtMe";
-            connect.NombreTabla = "departamento";
-            connect.CadenaConexion = "Data Source=LAPTOP-G7NSK0PF;Initial Catalog=LookAtMe;Integrated Security=True";
+        //public static void Main(String[] args)
+        //{
+        //    ConexionSQLSERVER connect = new ConexionSQLSERVER();
+        //    connect.NombreBaseDatos = "LookAtMe";
+        //    connect.NombreTabla = "departamento";
+        //    connect.CadenaConexion = "Data Source=LAPTOP-G7NSK0PF;Initial Catalog=LookAtMe;Integrated Security=True";
 
-            //Los campos id autoincrementados no necesitan ser declarados
-            connect.CadenaSQL = "INSERT INTO departamento (nombre) VALUES ('DPTOtest6') ";
-            connect.EsSelect = false;
-            connect.conectar();
-            Console.WriteLine("wiwiwiwi");
-            Console.ReadKey();
-            //}//Fin Testing
+        //    //Los campos id autoincrementados no necesitan ser declarados
+        //    connect.CadenaSQL = "INSERT INTO departamento (nombre) VALUES ('DPTOtest6') ";
+        //    connect.EsSelect = false;
+        //    connect.conectar();
+        //    Console.WriteLine("wiwiwiwi");
+        //    Console.ReadKey();
+        //    //}//Fin Testing
 
-        }//Fin ConexionSQLSERVER
+        //}Fin ConexionSQLSERVER
     }
 }
