@@ -35,6 +35,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,8 +48,58 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connected Services\ServiceDepartamento\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaHome.Designer.cs">
+      <DependentUpon>PantallaHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaHomePersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaHomePersonal.Designer.cs">
+      <DependentUpon>PantallaHomePersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaLoginPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaLoginPersonal.Designer.cs">
+      <DependentUpon>PantallaLoginPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaLoginTutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaLoginTutor.Designer.cs">
+      <DependentUpon>PantallaLoginTutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaRegistroDepartamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaRegistroDepartamento.Designer.cs">
+      <DependentUpon>PantallaRegistroDepartamento.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="PantallaHome.resx">
+      <DependentUpon>PantallaHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaHomePersonal.resx">
+      <DependentUpon>PantallaHomePersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaLoginPersonal.resx">
+      <DependentUpon>PantallaLoginPersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaLoginTutor.resx">
+      <DependentUpon>PantallaLoginTutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaRegistroDepartamento.resx">
+      <DependentUpon>PantallaRegistroDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -57,6 +109,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Connected Services\ServiceDepartamento\CapaGUI.ServiceDepartamento.insertarDepartamentoServiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceDepartamento\ServicioDepartamento.wsdl" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -82,6 +138,24 @@
       <Project>{45f211de-289a-4695-bc31-2b8cc1d9178f}</Project>
       <Name>CapaNegocio</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ServiceDepartamento\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceDepartamento\ServicioDepartamento.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceDepartamento\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceDepartamento\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceDepartamento\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
