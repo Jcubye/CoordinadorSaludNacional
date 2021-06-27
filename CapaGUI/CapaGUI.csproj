@@ -65,6 +65,12 @@
     <Compile Include="PantallaHomePersonal.Designer.cs">
       <DependentUpon>PantallaHomePersonal.cs</DependentUpon>
     </Compile>
+    <Compile Include="PantallaListadoDepartamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaListadoDepartamento.Designer.cs">
+      <DependentUpon>PantallaListadoDepartamento.cs</DependentUpon>
+    </Compile>
     <Compile Include="PantallaLoginPersonal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,9 @@
     <EmbeddedResource Include="PantallaHomePersonal.resx">
       <DependentUpon>PantallaHomePersonal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PantallaListadoDepartamento.resx">
+      <DependentUpon>PantallaListadoDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PantallaLoginPersonal.resx">
       <DependentUpon>PantallaLoginPersonal.cs</DependentUpon>
     </EmbeddedResource>
@@ -109,10 +118,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="Connected Services\ServiceDepartamento\CapaGUI.ServiceDepartamento.insertarDepartamentoServiceResponse.datasource">
+    <None Include="Connected Services\ServiceDepartamento\CapaGUI.ServiceDepartamento.Departamento.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServiceDepartamento\ServicioDepartamento.wsdl" />
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

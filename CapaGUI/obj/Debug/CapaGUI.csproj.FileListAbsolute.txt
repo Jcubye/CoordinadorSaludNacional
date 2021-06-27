@@ -19,3 +19,4 @@ C:\Users\Jcubye\Desktop\Integración de Plataformas\CoordinadorSaludNacional\Cap
 C:\Users\Jcubye\Desktop\Integración de Plataformas\CoordinadorSaludNacional\CapaGUI\obj\Debug\CapaGUI.csproj.CopyComplete
 C:\Users\Jcubye\Desktop\Integración de Plataformas\CoordinadorSaludNacional\CapaGUI\obj\Debug\CapaGUI.exe
 C:\Users\Jcubye\Desktop\Integración de Plataformas\CoordinadorSaludNacional\CapaGUI\obj\Debug\CapaGUI.pdb
+C:\Users\Jcubye\Desktop\Integración de Plataformas\CoordinadorSaludNacional\CapaGUI\obj\Debug\CapaGUI.PantallaListadoDepartamento.resources

@@ -42,7 +42,7 @@ namespace CapaServicios
         }
 
         [WebMethod]
-        public DataSet consultarDepartamento(int id)
+        public DataSet consultarDepartamento()
         {
             NegocioDepartamento auxNegocio = new NegocioDepartamento();
             return auxNegocio.consultaDepartamento();

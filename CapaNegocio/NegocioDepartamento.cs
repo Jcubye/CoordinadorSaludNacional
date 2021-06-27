@@ -49,6 +49,8 @@ namespace CapaNegocio
         public DataSet consultaDepartamento()
         {
             this.configurarConexion();
+            //es necesario referenciar la tabla sino no se cae
+            this.Conec.NombreTabla = "departamento";
             this.Conec.CadenaSQL = "SELECT * FROM dbo.departamento;";
             this.Conec.EsSelect = true;
             this.Conec.conectar();
@@ -58,6 +60,7 @@ namespace CapaNegocio
         public Departamento buscaDepartamento(int id)
         {
             this.configurarConexion();
+            this.Conec.NombreTabla = "departamento";   
             this.Conec.CadenaSQL = "SELECT * FROM dbo.departamento WHERE id = '" +
                                     id + "';";
             this.Conec.EsSelect = true;
@@ -83,7 +86,8 @@ namespace CapaNegocio
         public Departamento posicionDepartamento(int fila)
         {
             this.configurarConexion();
-            this.Conec.CadenaSQL = "SELECT * FROM dbo.departamento ;" ;
+            this.Conec.CadenaSQL = "SELECT * FROM dbo.departamento ;";
+            this.Conec.NombreTabla = "departamento";
             this.Conec.EsSelect = true;
             this.Conec.conectar();
             DataTable dt = new DataTable();

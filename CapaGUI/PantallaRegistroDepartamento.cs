@@ -10,12 +10,17 @@ using System.Windows.Forms;
 
 namespace CapaGUI
 {
+    
     public partial class PantallaRegistroDepartamento : Form
     {
         public PantallaRegistroDepartamento()
         {
             InitializeComponent();
             this.txtNombre.Focus();
+        }
+        public void limpiar()
+        {
+            this.txtNombre.Text = "";
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -36,16 +41,24 @@ namespace CapaGUI
                 auxServiceDepartamento.insertarDepartamentoService(auxDepartamento);
 
                 MessageBox.Show("¡Datos Guardados!" , "System");
+                this.limpiar();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Datos no Guardados" + ex.Message, "System");
+                this.txtNombre.Focus();
             }
         }
 
         private void PantallaRegistroDepartamento_Load(object sender, EventArgs e)
         {
             this.txtNombre.Focus();
+        }
+
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            PantallaListadoDepartamento pListadoDepartamento = new PantallaListadoDepartamento();
+            pListadoDepartamento.ShowDialog();
         }
     }
 }

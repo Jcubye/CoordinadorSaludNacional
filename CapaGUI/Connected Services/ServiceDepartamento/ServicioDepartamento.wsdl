@@ -18,6 +18,71 @@
       <s:element name="insertarDepartamentoServiceResponse">
         <s:complexType />
       </s:element>
+      <s:element name="actualizarDepartamento">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="departamento" type="tns:Departamento" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="actualizarDepartamentoResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="eliminarDepartamento">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="eliminarDepartamentoResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="consultarDepartamento">
+        <s:complexType />
+      </s:element>
+      <s:element name="consultarDepartamentoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="consultarDepartamentoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="buscaDepartamento">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="buscaDepartamentoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="buscaDepartamentoResult" type="tns:Departamento" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="posicionDepartamento">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="fila" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="posicionDepartamentoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="posicionDepartamentoResult" type="tns:Departamento" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
     </s:schema>
   </wsdl:types>
   <wsdl:message name="insertarDepartamentoServiceSoapIn">
@@ -26,10 +91,60 @@
   <wsdl:message name="insertarDepartamentoServiceSoapOut">
     <wsdl:part name="parameters" element="tns:insertarDepartamentoServiceResponse" />
   </wsdl:message>
+  <wsdl:message name="actualizarDepartamentoSoapIn">
+    <wsdl:part name="parameters" element="tns:actualizarDepartamento" />
+  </wsdl:message>
+  <wsdl:message name="actualizarDepartamentoSoapOut">
+    <wsdl:part name="parameters" element="tns:actualizarDepartamentoResponse" />
+  </wsdl:message>
+  <wsdl:message name="eliminarDepartamentoSoapIn">
+    <wsdl:part name="parameters" element="tns:eliminarDepartamento" />
+  </wsdl:message>
+  <wsdl:message name="eliminarDepartamentoSoapOut">
+    <wsdl:part name="parameters" element="tns:eliminarDepartamentoResponse" />
+  </wsdl:message>
+  <wsdl:message name="consultarDepartamentoSoapIn">
+    <wsdl:part name="parameters" element="tns:consultarDepartamento" />
+  </wsdl:message>
+  <wsdl:message name="consultarDepartamentoSoapOut">
+    <wsdl:part name="parameters" element="tns:consultarDepartamentoResponse" />
+  </wsdl:message>
+  <wsdl:message name="buscaDepartamentoSoapIn">
+    <wsdl:part name="parameters" element="tns:buscaDepartamento" />
+  </wsdl:message>
+  <wsdl:message name="buscaDepartamentoSoapOut">
+    <wsdl:part name="parameters" element="tns:buscaDepartamentoResponse" />
+  </wsdl:message>
+  <wsdl:message name="posicionDepartamentoSoapIn">
+    <wsdl:part name="parameters" element="tns:posicionDepartamento" />
+  </wsdl:message>
+  <wsdl:message name="posicionDepartamentoSoapOut">
+    <wsdl:part name="parameters" element="tns:posicionDepartamentoResponse" />
+  </wsdl:message>
   <wsdl:portType name="ServicioDepartamentoSoap">
     <wsdl:operation name="insertarDepartamentoService">
       <wsdl:input message="tns:insertarDepartamentoServiceSoapIn" />
       <wsdl:output message="tns:insertarDepartamentoServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="actualizarDepartamento">
+      <wsdl:input message="tns:actualizarDepartamentoSoapIn" />
+      <wsdl:output message="tns:actualizarDepartamentoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="eliminarDepartamento">
+      <wsdl:input message="tns:eliminarDepartamentoSoapIn" />
+      <wsdl:output message="tns:eliminarDepartamentoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="consultarDepartamento">
+      <wsdl:input message="tns:consultarDepartamentoSoapIn" />
+      <wsdl:output message="tns:consultarDepartamentoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="buscaDepartamento">
+      <wsdl:input message="tns:buscaDepartamentoSoapIn" />
+      <wsdl:output message="tns:buscaDepartamentoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="posicionDepartamento">
+      <wsdl:input message="tns:posicionDepartamentoSoapIn" />
+      <wsdl:output message="tns:posicionDepartamentoSoapOut" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="ServicioDepartamentoSoap" type="tns:ServicioDepartamentoSoap">
@@ -43,11 +158,101 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="actualizarDepartamento">
+      <soap:operation soapAction="http://tempuri.org/actualizarDepartamento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="eliminarDepartamento">
+      <soap:operation soapAction="http://tempuri.org/eliminarDepartamento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarDepartamento">
+      <soap:operation soapAction="http://tempuri.org/consultarDepartamento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscaDepartamento">
+      <soap:operation soapAction="http://tempuri.org/buscaDepartamento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="posicionDepartamento">
+      <soap:operation soapAction="http://tempuri.org/posicionDepartamento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
   </wsdl:binding>
   <wsdl:binding name="ServicioDepartamentoSoap12" type="tns:ServicioDepartamentoSoap">
     <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="insertarDepartamentoService">
       <soap12:operation soapAction="http://tempuri.org/insertarDepartamentoService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="actualizarDepartamento">
+      <soap12:operation soapAction="http://tempuri.org/actualizarDepartamento" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="eliminarDepartamento">
+      <soap12:operation soapAction="http://tempuri.org/eliminarDepartamento" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarDepartamento">
+      <soap12:operation soapAction="http://tempuri.org/consultarDepartamento" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscaDepartamento">
+      <soap12:operation soapAction="http://tempuri.org/buscaDepartamento" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="posicionDepartamento">
+      <soap12:operation soapAction="http://tempuri.org/posicionDepartamento" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>

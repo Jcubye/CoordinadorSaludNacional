@@ -9,57 +9,89 @@
 //------------------------------------------------------------------------------
 
 namespace CapaGUI.ServiceDepartamento {
-    using System.Runtime.Serialization;
-    using System;
+    using System.Data;
     
     
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Departamento", Namespace="http://tempuri.org/")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceDepartamento.ServicioDepartamentoSoap")]
+    public interface ServicioDepartamentoSoap {
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/insertarDepartamentoService", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        void insertarDepartamentoService(CapaGUI.ServiceDepartamento.Departamento departamento);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/insertarDepartamentoService", ReplyAction="*")]
+        System.Threading.Tasks.Task insertarDepartamentoServiceAsync(CapaGUI.ServiceDepartamento.Departamento departamento);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/actualizarDepartamento", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        void actualizarDepartamento(CapaGUI.ServiceDepartamento.Departamento departamento);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/actualizarDepartamento", ReplyAction="*")]
+        System.Threading.Tasks.Task actualizarDepartamentoAsync(CapaGUI.ServiceDepartamento.Departamento departamento);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/eliminarDepartamento", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        void eliminarDepartamento(int id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/eliminarDepartamento", ReplyAction="*")]
+        System.Threading.Tasks.Task eliminarDepartamentoAsync(int id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/consultarDepartamento", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Data.DataSet consultarDepartamento();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/consultarDepartamento", ReplyAction="*")]
+        System.Threading.Tasks.Task<System.Data.DataSet> consultarDepartamentoAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/buscaDepartamento", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        CapaGUI.ServiceDepartamento.Departamento buscaDepartamento(int id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/buscaDepartamento", ReplyAction="*")]
+        System.Threading.Tasks.Task<CapaGUI.ServiceDepartamento.Departamento> buscaDepartamentoAsync(int id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/posicionDepartamento", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        CapaGUI.ServiceDepartamento.Departamento posicionDepartamento(int fila);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/posicionDepartamento", ReplyAction="*")]
+        System.Threading.Tasks.Task<CapaGUI.ServiceDepartamento.Departamento> posicionDepartamentoAsync(int fila);
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
     [System.SerializableAttribute()]
-    public partial class Departamento : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class Departamento : object, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        private int idField;
         
-        private int IdField;
+        private string nombreField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string NombreField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
         public int Id {
             get {
-                return this.IdField;
+                return this.idField;
             }
             set {
-                if ((this.IdField.Equals(value) != true)) {
-                    this.IdField = value;
-                    this.RaisePropertyChanged("Id");
-                }
+                this.idField = value;
+                this.RaisePropertyChanged("Id");
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
         public string Nombre {
             get {
-                return this.NombreField;
+                return this.nombreField;
             }
             set {
-                if ((object.ReferenceEquals(this.NombreField, value) != true)) {
-                    this.NombreField = value;
-                    this.RaisePropertyChanged("Nombre");
-                }
+                this.nombreField = value;
+                this.RaisePropertyChanged("Nombre");
             }
         }
         
@@ -70,79 +102,6 @@ namespace CapaGUI.ServiceDepartamento {
             if ((propertyChanged != null)) {
                 propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
             }
-        }
-    }
-    
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceDepartamento.ServicioDepartamentoSoap")]
-    public interface ServicioDepartamentoSoap {
-        
-        // CODEGEN: Generating message contract since element name departamento from namespace http://tempuri.org/ is not marked nillable
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/insertarDepartamentoService", ReplyAction="*")]
-        CapaGUI.ServiceDepartamento.insertarDepartamentoServiceResponse insertarDepartamentoService(CapaGUI.ServiceDepartamento.insertarDepartamentoServiceRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/insertarDepartamentoService", ReplyAction="*")]
-        System.Threading.Tasks.Task<CapaGUI.ServiceDepartamento.insertarDepartamentoServiceResponse> insertarDepartamentoServiceAsync(CapaGUI.ServiceDepartamento.insertarDepartamentoServiceRequest request);
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class insertarDepartamentoServiceRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="insertarDepartamentoService", Namespace="http://tempuri.org/", Order=0)]
-        public CapaGUI.ServiceDepartamento.insertarDepartamentoServiceRequestBody Body;
-        
-        public insertarDepartamentoServiceRequest() {
-        }
-        
-        public insertarDepartamentoServiceRequest(CapaGUI.ServiceDepartamento.insertarDepartamentoServiceRequestBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class insertarDepartamentoServiceRequestBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public CapaGUI.ServiceDepartamento.Departamento departamento;
-        
-        public insertarDepartamentoServiceRequestBody() {
-        }
-        
-        public insertarDepartamentoServiceRequestBody(CapaGUI.ServiceDepartamento.Departamento departamento) {
-            this.departamento = departamento;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class insertarDepartamentoServiceResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="insertarDepartamentoServiceResponse", Namespace="http://tempuri.org/", Order=0)]
-        public CapaGUI.ServiceDepartamento.insertarDepartamentoServiceResponseBody Body;
-        
-        public insertarDepartamentoServiceResponse() {
-        }
-        
-        public insertarDepartamentoServiceResponse(CapaGUI.ServiceDepartamento.insertarDepartamentoServiceResponseBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute()]
-    public partial class insertarDepartamentoServiceResponseBody {
-        
-        public insertarDepartamentoServiceResponseBody() {
         }
     }
     
@@ -173,28 +132,52 @@ namespace CapaGUI.ServiceDepartamento {
                 base(binding, remoteAddress) {
         }
         
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        CapaGUI.ServiceDepartamento.insertarDepartamentoServiceResponse CapaGUI.ServiceDepartamento.ServicioDepartamentoSoap.insertarDepartamentoService(CapaGUI.ServiceDepartamento.insertarDepartamentoServiceRequest request) {
-            return base.Channel.insertarDepartamentoService(request);
-        }
-        
         public void insertarDepartamentoService(CapaGUI.ServiceDepartamento.Departamento departamento) {
-            CapaGUI.ServiceDepartamento.insertarDepartamentoServiceRequest inValue = new CapaGUI.ServiceDepartamento.insertarDepartamentoServiceRequest();
-            inValue.Body = new CapaGUI.ServiceDepartamento.insertarDepartamentoServiceRequestBody();
-            inValue.Body.departamento = departamento;
-            CapaGUI.ServiceDepartamento.insertarDepartamentoServiceResponse retVal = ((CapaGUI.ServiceDepartamento.ServicioDepartamentoSoap)(this)).insertarDepartamentoService(inValue);
+            base.Channel.insertarDepartamentoService(departamento);
         }
         
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CapaGUI.ServiceDepartamento.insertarDepartamentoServiceResponse> CapaGUI.ServiceDepartamento.ServicioDepartamentoSoap.insertarDepartamentoServiceAsync(CapaGUI.ServiceDepartamento.insertarDepartamentoServiceRequest request) {
-            return base.Channel.insertarDepartamentoServiceAsync(request);
+        public System.Threading.Tasks.Task insertarDepartamentoServiceAsync(CapaGUI.ServiceDepartamento.Departamento departamento) {
+            return base.Channel.insertarDepartamentoServiceAsync(departamento);
         }
         
-        public System.Threading.Tasks.Task<CapaGUI.ServiceDepartamento.insertarDepartamentoServiceResponse> insertarDepartamentoServiceAsync(CapaGUI.ServiceDepartamento.Departamento departamento) {
-            CapaGUI.ServiceDepartamento.insertarDepartamentoServiceRequest inValue = new CapaGUI.ServiceDepartamento.insertarDepartamentoServiceRequest();
-            inValue.Body = new CapaGUI.ServiceDepartamento.insertarDepartamentoServiceRequestBody();
-            inValue.Body.departamento = departamento;
-            return ((CapaGUI.ServiceDepartamento.ServicioDepartamentoSoap)(this)).insertarDepartamentoServiceAsync(inValue);
+        public void actualizarDepartamento(CapaGUI.ServiceDepartamento.Departamento departamento) {
+            base.Channel.actualizarDepartamento(departamento);
+        }
+        
+        public System.Threading.Tasks.Task actualizarDepartamentoAsync(CapaGUI.ServiceDepartamento.Departamento departamento) {
+            return base.Channel.actualizarDepartamentoAsync(departamento);
+        }
+        
+        public void eliminarDepartamento(int id) {
+            base.Channel.eliminarDepartamento(id);
+        }
+        
+        public System.Threading.Tasks.Task eliminarDepartamentoAsync(int id) {
+            return base.Channel.eliminarDepartamentoAsync(id);
+        }
+        
+        public System.Data.DataSet consultarDepartamento() {
+            return base.Channel.consultarDepartamento();
+        }
+        
+        public System.Threading.Tasks.Task<System.Data.DataSet> consultarDepartamentoAsync() {
+            return base.Channel.consultarDepartamentoAsync();
+        }
+        
+        public CapaGUI.ServiceDepartamento.Departamento buscaDepartamento(int id) {
+            return base.Channel.buscaDepartamento(id);
+        }
+        
+        public System.Threading.Tasks.Task<CapaGUI.ServiceDepartamento.Departamento> buscaDepartamentoAsync(int id) {
+            return base.Channel.buscaDepartamentoAsync(id);
+        }
+        
+        public CapaGUI.ServiceDepartamento.Departamento posicionDepartamento(int fila) {
+            return base.Channel.posicionDepartamento(fila);
+        }
+        
+        public System.Threading.Tasks.Task<CapaGUI.ServiceDepartamento.Departamento> posicionDepartamentoAsync(int fila) {
+            return base.Channel.posicionDepartamentoAsync(fila);
         }
     }
 }
