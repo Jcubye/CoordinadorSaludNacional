@@ -57,6 +57,8 @@ namespace CapaGUI
             // 
             // txtId
             // 
+            this.txtId.Enabled = false;
+            this.txtId.HideSelection = false;
             this.txtId.Location = new System.Drawing.Point(381, 120);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(100, 22);
@@ -64,9 +66,9 @@ namespace CapaGUI
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.Location = new System.Drawing.Point(178, 255);
+            this.btnRegistrar.Location = new System.Drawing.Point(164, 255);
             this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(75, 23);
+            this.btnRegistrar.Size = new System.Drawing.Size(89, 23);
             this.btnRegistrar.TabIndex = 2;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = true;
@@ -99,9 +101,9 @@ namespace CapaGUI
             // 
             // btnActualizar
             // 
-            this.btnActualizar.Location = new System.Drawing.Point(275, 255);
+            this.btnActualizar.Location = new System.Drawing.Point(268, 255);
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(75, 23);
+            this.btnActualizar.Size = new System.Drawing.Size(91, 23);
             this.btnActualizar.TabIndex = 6;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = true;
@@ -128,7 +130,7 @@ namespace CapaGUI
             // 
             this.btnCancelar.Location = new System.Drawing.Point(557, 255);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelar.Size = new System.Drawing.Size(83, 23);
             this.btnCancelar.TabIndex = 8;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -138,7 +140,7 @@ namespace CapaGUI
             // 
             this.button6.Location = new System.Drawing.Point(557, 293);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.Size = new System.Drawing.Size(83, 23);
             this.button6.TabIndex = 12;
             this.button6.Text = ">>";
             this.button6.UseVisualStyleBackColor = true;
@@ -154,18 +156,18 @@ namespace CapaGUI
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(275, 293);
+            this.button8.Location = new System.Drawing.Point(268, 293);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
+            this.button8.Size = new System.Drawing.Size(91, 23);
             this.button8.TabIndex = 10;
             this.button8.Text = "<";
             this.button8.UseVisualStyleBackColor = true;
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(178, 293);
+            this.button9.Location = new System.Drawing.Point(164, 293);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(75, 23);
+            this.button9.Size = new System.Drawing.Size(89, 23);
             this.button9.TabIndex = 9;
             this.button9.Text = "<<";
             this.button9.UseVisualStyleBackColor = true;
@@ -199,6 +201,7 @@ namespace CapaGUI
             this.Controls.Add(this.label1);
             this.Name = "PantallaRegistroDepartamento";
             this.Text = "PantallaRegistroDepartamento";
+            this.Load += new System.EventHandler(this.PantallaRegistroDepartamento_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

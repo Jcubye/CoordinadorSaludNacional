@@ -2,6 +2,7 @@
 using CapaNegocio;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.Services;
@@ -25,6 +26,40 @@ namespace CapaServicios
             NegocioDepartamento auxNegocio = new NegocioDepartamento();
             auxNegocio.insertarDepartamento(departamento);
 
+        }
+        [WebMethod]
+        public void actualizarDepartamento(Departamento departamento)
+        {
+            NegocioDepartamento auxNegocio = new NegocioDepartamento();
+            auxNegocio.actualizarDepartamento(departamento);
+
+        }
+        [WebMethod]
+        public void eliminarDepartamento(int id)
+        {
+            NegocioDepartamento auxNegocio = new NegocioDepartamento();
+            auxNegocio.eliminarDepartamento(id);
+        }
+
+        [WebMethod]
+        public DataSet consultarDepartamento(int id)
+        {
+            NegocioDepartamento auxNegocio = new NegocioDepartamento();
+            return auxNegocio.consultaDepartamento();
+        }
+
+        [WebMethod]
+        public Departamento buscaDepartamento(int id)
+        {
+            NegocioDepartamento auxNegocio = new NegocioDepartamento();
+            return auxNegocio.buscaDepartamento(id);
+        }
+
+        [WebMethod]
+        public Departamento posicionDepartamento(int fila)
+        {
+            NegocioDepartamento auxNegocio = new NegocioDepartamento();
+            return auxNegocio.buscaDepartamento(fila);
         }
     }
 }

@@ -15,6 +15,7 @@ namespace CapaGUI
         public PantallaRegistroDepartamento()
         {
             InitializeComponent();
+            this.txtNombre.Focus();
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -40,6 +41,11 @@ namespace CapaGUI
             {
                 MessageBox.Show("Datos no Guardados" + ex.Message, "System");
             }
+        }
+
+        private void PantallaRegistroDepartamento_Load(object sender, EventArgs e)
+        {
+            this.txtNombre.Focus();
         }
     }
 }
