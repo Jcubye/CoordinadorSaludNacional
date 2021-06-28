@@ -44,8 +44,25 @@ namespace CapaGUI
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            this.Dispose();
-            System.GC.Collect();
+            if (this.btnCancelar.Text == "Salir")
+            {
+                this.Dispose();
+                System.GC.Collect();
+            }
+            else
+            {
+                this.deshabilitar();
+                this.btnRegistrar.Text = "Nuevo";
+                this.btnActualizar.Enabled = true;
+                this.btnEliminar.Enabled = true;
+                this.btnListar.Enabled = true;
+                this.btnPrimero.Enabled = true;
+                this.btnAnterior.Enabled = true;
+                this.btnSiguiente.Enabled = true;
+                this.btnUltimo.Enabled = true;
+                this.btnCancelar.Text = "Salir";
+                this.mostrar();
+            }
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
@@ -64,6 +81,7 @@ namespace CapaGUI
                     this.btnAnterior.Enabled = false;
                     this.btnSiguiente.Enabled = false;
                     this.btnUltimo.Enabled = false;
+                    this.btnCancelar.Text = "Cancelar";
                 }
                 else
                 {
@@ -72,19 +90,39 @@ namespace CapaGUI
                     auxDepartamento.Id = 0;
                     auxDepartamento.Nombre = this.txtNombre.Text;
 
-                    auxServiceDepartamento.insertarDepartamentoService(auxDepartamento);
+                    if (String.IsNullOrEmpty(this.txtNombre.Text))
+                    {
+                        MessageBox.Show("Debe ingresar Datos", "Salir");
+                    }
+                    else
+                    {
+                        //no valida si existe, pero en este caso no lo hara ya que Id no es ingresable y se autoincrementa
+                        //if (String.IsNullOrEmpty(auxServiceDepartamento.buscaDepartamento(auxDepartamento.Id).Nombre))
+                        //{
+                        //    MessageBox.Show("El Departamento ya existe", "System");
+                        //}
+                        //else
+                        //{
+                            //aca iria el grabar, si el dpto no existiera
+                        //}
+                        auxServiceDepartamento.insertarDepartamentoService(auxDepartamento);
 
-                    MessageBox.Show("¡Datos Guardados!", "System");
-                    this.deshabilitar();
-                    this.btnRegistrar.Text = "Nuevo";
-                    this.btnActualizar.Enabled = true;
-                    this.btnEliminar.Enabled = true;
-                    this.btnListar.Enabled = true;
-                    this.btnPrimero.Enabled = true;
-                    this.btnAnterior.Enabled = true;
-                    this.btnSiguiente.Enabled = true;
-                    this.btnUltimo.Enabled = true;
-                    this.mostrar();
+                        MessageBox.Show("¡Datos Guardados!", "System");
+                        this.deshabilitar();
+                        this.btnRegistrar.Text = "Nuevo";
+                        this.btnActualizar.Enabled = true;
+                        this.btnEliminar.Enabled = true;
+                        this.btnListar.Enabled = true;
+                        this.btnPrimero.Enabled = true;
+                        this.btnAnterior.Enabled = true;
+                        this.btnSiguiente.Enabled = true;
+                        this.btnUltimo.Enabled = true;
+                        this.btnCancelar.Text = "Salir";
+                        this.mostrar();
+
+
+                    }
+                    
                 }
                 
             }
