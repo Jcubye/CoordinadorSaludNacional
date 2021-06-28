@@ -1,4 +1,3 @@
-C:\Users\Jcubye\Desktop\Integración de Plataformas\CoordinadorSaludNacional\CapaConexion\obj\Debug\CapaConexion.csproj.AssemblyReference.cache
 C:\Users\Jcubye\Desktop\Integración de Plataformas\CoordinadorSaludNacional\CapaConexion\obj\Debug\CapaConexion.csproj.CoreCompileInputs.cache
 C:\Users\Jcubye\Desktop\Integración de Plataformas\CoordinadorSaludNacional\CapaConexion\bin\Debug\CapaConexion.pdb
 C:\Users\Jcubye\Desktop\Integración de Plataformas\CoordinadorSaludNacional\CapaConexion\obj\Debug\CapaConexion.pdb

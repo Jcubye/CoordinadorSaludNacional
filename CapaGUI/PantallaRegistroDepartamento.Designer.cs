@@ -39,10 +39,10 @@ namespace CapaGUI
             this.btnListar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.btnUltimo = new System.Windows.Forms.Button();
+            this.btnSiguiente = new System.Windows.Forms.Button();
+            this.btnAnterior = new System.Windows.Forms.Button();
+            this.btnPrimero = new System.Windows.Forms.Button();
             this.txtPosicion = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -137,41 +137,45 @@ namespace CapaGUI
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // button6
+            // btnUltimo
             // 
-            this.button6.Location = new System.Drawing.Point(557, 293);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(83, 23);
-            this.button6.TabIndex = 12;
-            this.button6.Text = ">>";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnUltimo.Location = new System.Drawing.Point(557, 293);
+            this.btnUltimo.Name = "btnUltimo";
+            this.btnUltimo.Size = new System.Drawing.Size(83, 23);
+            this.btnUltimo.TabIndex = 12;
+            this.btnUltimo.Text = ">>";
+            this.btnUltimo.UseVisualStyleBackColor = true;
+            this.btnUltimo.Click += new System.EventHandler(this.btnUltimo_Click);
             // 
-            // button7
+            // btnSiguiente
             // 
-            this.button7.Location = new System.Drawing.Point(465, 293);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
-            this.button7.TabIndex = 11;
-            this.button7.Text = ">";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btnSiguiente.Location = new System.Drawing.Point(465, 293);
+            this.btnSiguiente.Name = "btnSiguiente";
+            this.btnSiguiente.Size = new System.Drawing.Size(75, 23);
+            this.btnSiguiente.TabIndex = 11;
+            this.btnSiguiente.Text = ">";
+            this.btnSiguiente.UseVisualStyleBackColor = true;
+            this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click);
             // 
-            // button8
+            // btnAnterior
             // 
-            this.button8.Location = new System.Drawing.Point(268, 293);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(91, 23);
-            this.button8.TabIndex = 10;
-            this.button8.Text = "<";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btnAnterior.Location = new System.Drawing.Point(268, 293);
+            this.btnAnterior.Name = "btnAnterior";
+            this.btnAnterior.Size = new System.Drawing.Size(91, 23);
+            this.btnAnterior.TabIndex = 10;
+            this.btnAnterior.Text = "<";
+            this.btnAnterior.UseVisualStyleBackColor = true;
+            this.btnAnterior.Click += new System.EventHandler(this.button8_Click);
             // 
-            // button9
+            // btnPrimero
             // 
-            this.button9.Location = new System.Drawing.Point(164, 293);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(89, 23);
-            this.button9.TabIndex = 9;
-            this.button9.Text = "<<";
-            this.button9.UseVisualStyleBackColor = true;
+            this.btnPrimero.Location = new System.Drawing.Point(164, 293);
+            this.btnPrimero.Name = "btnPrimero";
+            this.btnPrimero.Size = new System.Drawing.Size(89, 23);
+            this.btnPrimero.TabIndex = 9;
+            this.btnPrimero.Text = "<<";
+            this.btnPrimero.UseVisualStyleBackColor = true;
+            this.btnPrimero.Click += new System.EventHandler(this.btnPrimero_Click);
             // 
             // txtPosicion
             // 
@@ -186,10 +190,10 @@ namespace CapaGUI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.txtPosicion);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button9);
+            this.Controls.Add(this.btnUltimo);
+            this.Controls.Add(this.btnSiguiente);
+            this.Controls.Add(this.btnAnterior);
+            this.Controls.Add(this.btnPrimero);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnListar);
@@ -220,10 +224,10 @@ namespace CapaGUI
         private System.Windows.Forms.Button btnListar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button btnUltimo;
+        private System.Windows.Forms.Button btnSiguiente;
+        private System.Windows.Forms.Button btnAnterior;
+        private System.Windows.Forms.Button btnPrimero;
         private System.Windows.Forms.TextBox txtPosicion;
     }
 }
