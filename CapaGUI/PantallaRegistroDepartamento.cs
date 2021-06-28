@@ -22,11 +22,14 @@ namespace CapaGUI
         public PantallaRegistroDepartamento()
         {
             InitializeComponent();
+            this.txtId.Text = String.Empty;
             this.txtNombre.Focus();
         }
         public void limpiar()
         {
-            this.txtNombre.Text = "";
+            this.txtId.Text = String.Empty;
+            this.txtNombre.Text = String.Empty;
+            this.txtNombre.Focus();
         }
 
         public void deshabilitar()
@@ -49,20 +52,32 @@ namespace CapaGUI
         {
             try
             {
-                ServiceDepartamento.ServicioDepartamentoSoapClient auxServiceDepartamento = new ServiceDepartamento.ServicioDepartamentoSoapClient();
-                ServiceDepartamento.Departamento auxDepartamento = new ServiceDepartamento.Departamento();
-                auxDepartamento.Id = 0;
-                auxDepartamento.Nombre = this.txtNombre.Text;
+                if (this.btnRegistrar.Text == "Nuevo")
+                {
+                    this.limpiar();
+                    this.habilitar();
+                    this.btnRegistrar.Text = "Registrar";
+                }
+                else
+                {
+                    ServiceDepartamento.ServicioDepartamentoSoapClient auxServiceDepartamento = new ServiceDepartamento.ServicioDepartamentoSoapClient();
+                    ServiceDepartamento.Departamento auxDepartamento = new ServiceDepartamento.Departamento();
+                    auxDepartamento.Id = 0;
+                    auxDepartamento.Nombre = this.txtNombre.Text;
 
-                auxServiceDepartamento.insertarDepartamentoService(auxDepartamento);
+                    auxServiceDepartamento.insertarDepartamentoService(auxDepartamento);
 
-                MessageBox.Show("¡Datos Guardados!" , "System");
-                this.limpiar();
+                    MessageBox.Show("¡Datos Guardados!", "System");
+                    this.deshabilitar();
+                    this.btnRegistrar.Text = "Nuevo";
+                    this.mostrar();
+                }
+                
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Datos no Guardados" + ex.Message, "System");
-                this.txtNombre.Focus();
+                this.limpiar();
             }
         }
 
@@ -92,6 +107,7 @@ namespace CapaGUI
 
         private void PantallaRegistroDepartamento_Load(object sender, EventArgs e)
         {
+            this.txtId.Text = String.Empty;
             this.btnRegistrar.Text = "Nuevo";
             this.Posicion = 1;
             this.deshabilitar();

@@ -179,6 +179,7 @@ namespace CapaGUI
             // 
             // txtPosicion
             // 
+            this.txtPosicion.Enabled = false;
             this.txtPosicion.Location = new System.Drawing.Point(371, 294);
             this.txtPosicion.Name = "txtPosicion";
             this.txtPosicion.Size = new System.Drawing.Size(75, 22);
