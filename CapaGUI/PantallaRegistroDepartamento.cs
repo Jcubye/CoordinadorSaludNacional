@@ -57,6 +57,13 @@ namespace CapaGUI
                     this.limpiar();
                     this.habilitar();
                     this.btnRegistrar.Text = "Registrar";
+                    this.btnActualizar.Enabled = false;
+                    this.btnEliminar.Enabled = false;
+                    this.btnListar.Enabled = false;
+                    this.btnPrimero.Enabled = false;
+                    this.btnAnterior.Enabled = false;
+                    this.btnSiguiente.Enabled = false;
+                    this.btnUltimo.Enabled = false;
                 }
                 else
                 {
@@ -70,6 +77,13 @@ namespace CapaGUI
                     MessageBox.Show("¡Datos Guardados!", "System");
                     this.deshabilitar();
                     this.btnRegistrar.Text = "Nuevo";
+                    this.btnActualizar.Enabled = true;
+                    this.btnEliminar.Enabled = true;
+                    this.btnListar.Enabled = true;
+                    this.btnPrimero.Enabled = true;
+                    this.btnAnterior.Enabled = true;
+                    this.btnSiguiente.Enabled = true;
+                    this.btnUltimo.Enabled = true;
                     this.mostrar();
                 }
                 
