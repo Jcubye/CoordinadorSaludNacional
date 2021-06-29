@@ -30,19 +30,19 @@ namespace CapaGUI.ServiceTutor {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/actualizarTutor", ReplyAction="*")]
         System.Threading.Tasks.Task actualizarTutorAsync(CapaGUI.ServiceTutor.Tutor tutor);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/eliminarDepartamento", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/eliminarTutor", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        void eliminarDepartamento(string rut);
+        void eliminarTutor(string rut);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/eliminarDepartamento", ReplyAction="*")]
-        System.Threading.Tasks.Task eliminarDepartamentoAsync(string rut);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/eliminarTutor", ReplyAction="*")]
+        System.Threading.Tasks.Task eliminarTutorAsync(string rut);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/consultarDepartamento", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/consultarTutor", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        System.Data.DataSet consultarDepartamento();
+        System.Data.DataSet consultarTutor();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/consultarDepartamento", ReplyAction="*")]
-        System.Threading.Tasks.Task<System.Data.DataSet> consultarDepartamentoAsync();
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/consultarTutor", ReplyAction="*")]
+        System.Threading.Tasks.Task<System.Data.DataSet> consultarTutorAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/buscaTutor", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -218,20 +218,20 @@ namespace CapaGUI.ServiceTutor {
             return base.Channel.actualizarTutorAsync(tutor);
         }
         
-        public void eliminarDepartamento(string rut) {
-            base.Channel.eliminarDepartamento(rut);
+        public void eliminarTutor(string rut) {
+            base.Channel.eliminarTutor(rut);
         }
         
-        public System.Threading.Tasks.Task eliminarDepartamentoAsync(string rut) {
-            return base.Channel.eliminarDepartamentoAsync(rut);
+        public System.Threading.Tasks.Task eliminarTutorAsync(string rut) {
+            return base.Channel.eliminarTutorAsync(rut);
         }
         
-        public System.Data.DataSet consultarDepartamento() {
-            return base.Channel.consultarDepartamento();
+        public System.Data.DataSet consultarTutor() {
+            return base.Channel.consultarTutor();
         }
         
-        public System.Threading.Tasks.Task<System.Data.DataSet> consultarDepartamentoAsync() {
-            return base.Channel.consultarDepartamentoAsync();
+        public System.Threading.Tasks.Task<System.Data.DataSet> consultarTutorAsync() {
+            return base.Channel.consultarTutorAsync();
         }
         
         public CapaGUI.ServiceTutor.Tutor buscaTutor(string rut) {

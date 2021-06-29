@@ -33,23 +33,23 @@
       <s:element name="actualizarTutorResponse">
         <s:complexType />
       </s:element>
-      <s:element name="eliminarDepartamento">
+      <s:element name="eliminarTutor">
         <s:complexType>
           <s:sequence>
             <s:element minOccurs="0" maxOccurs="1" name="rut" type="s:string" />
           </s:sequence>
         </s:complexType>
       </s:element>
-      <s:element name="eliminarDepartamentoResponse">
+      <s:element name="eliminarTutorResponse">
         <s:complexType />
       </s:element>
-      <s:element name="consultarDepartamento">
+      <s:element name="consultarTutor">
         <s:complexType />
       </s:element>
-      <s:element name="consultarDepartamentoResponse">
+      <s:element name="consultarTutorResponse">
         <s:complexType>
           <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="consultarDepartamentoResult">
+            <s:element minOccurs="0" maxOccurs="1" name="consultarTutorResult">
               <s:complexType>
                 <s:sequence>
                   <s:element ref="s:schema" />
@@ -102,17 +102,17 @@
   <wsdl:message name="actualizarTutorSoapOut">
     <wsdl:part name="parameters" element="tns:actualizarTutorResponse" />
   </wsdl:message>
-  <wsdl:message name="eliminarDepartamentoSoapIn">
-    <wsdl:part name="parameters" element="tns:eliminarDepartamento" />
+  <wsdl:message name="eliminarTutorSoapIn">
+    <wsdl:part name="parameters" element="tns:eliminarTutor" />
   </wsdl:message>
-  <wsdl:message name="eliminarDepartamentoSoapOut">
-    <wsdl:part name="parameters" element="tns:eliminarDepartamentoResponse" />
+  <wsdl:message name="eliminarTutorSoapOut">
+    <wsdl:part name="parameters" element="tns:eliminarTutorResponse" />
   </wsdl:message>
-  <wsdl:message name="consultarDepartamentoSoapIn">
-    <wsdl:part name="parameters" element="tns:consultarDepartamento" />
+  <wsdl:message name="consultarTutorSoapIn">
+    <wsdl:part name="parameters" element="tns:consultarTutor" />
   </wsdl:message>
-  <wsdl:message name="consultarDepartamentoSoapOut">
-    <wsdl:part name="parameters" element="tns:consultarDepartamentoResponse" />
+  <wsdl:message name="consultarTutorSoapOut">
+    <wsdl:part name="parameters" element="tns:consultarTutorResponse" />
   </wsdl:message>
   <wsdl:message name="buscaTutorSoapIn">
     <wsdl:part name="parameters" element="tns:buscaTutor" />
@@ -135,13 +135,13 @@
       <wsdl:input message="tns:actualizarTutorSoapIn" />
       <wsdl:output message="tns:actualizarTutorSoapOut" />
     </wsdl:operation>
-    <wsdl:operation name="eliminarDepartamento">
-      <wsdl:input message="tns:eliminarDepartamentoSoapIn" />
-      <wsdl:output message="tns:eliminarDepartamentoSoapOut" />
+    <wsdl:operation name="eliminarTutor">
+      <wsdl:input message="tns:eliminarTutorSoapIn" />
+      <wsdl:output message="tns:eliminarTutorSoapOut" />
     </wsdl:operation>
-    <wsdl:operation name="consultarDepartamento">
-      <wsdl:input message="tns:consultarDepartamentoSoapIn" />
-      <wsdl:output message="tns:consultarDepartamentoSoapOut" />
+    <wsdl:operation name="consultarTutor">
+      <wsdl:input message="tns:consultarTutorSoapIn" />
+      <wsdl:output message="tns:consultarTutorSoapOut" />
     </wsdl:operation>
     <wsdl:operation name="buscaTutor">
       <wsdl:input message="tns:buscaTutorSoapIn" />
@@ -172,8 +172,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="eliminarDepartamento">
-      <soap:operation soapAction="http://tempuri.org/eliminarDepartamento" style="document" />
+    <wsdl:operation name="eliminarTutor">
+      <soap:operation soapAction="http://tempuri.org/eliminarTutor" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -181,8 +181,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="consultarDepartamento">
-      <soap:operation soapAction="http://tempuri.org/consultarDepartamento" style="document" />
+    <wsdl:operation name="consultarTutor">
+      <soap:operation soapAction="http://tempuri.org/consultarTutor" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -229,8 +229,8 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="eliminarDepartamento">
-      <soap12:operation soapAction="http://tempuri.org/eliminarDepartamento" style="document" />
+    <wsdl:operation name="eliminarTutor">
+      <soap12:operation soapAction="http://tempuri.org/eliminarTutor" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -238,8 +238,8 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="consultarDepartamento">
-      <soap12:operation soapAction="http://tempuri.org/consultarDepartamento" style="document" />
+    <wsdl:operation name="consultarTutor">
+      <soap12:operation soapAction="http://tempuri.org/consultarTutor" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>

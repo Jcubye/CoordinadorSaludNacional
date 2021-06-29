@@ -281,6 +281,7 @@ namespace CapaGUI
             this.Controls.Add(this.label1);
             this.Name = "PantallaRegistroTutor";
             this.Text = "PantallaRegistroTutor";
+            this.Load += new System.EventHandler(this.PantallaRegistroTutor_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

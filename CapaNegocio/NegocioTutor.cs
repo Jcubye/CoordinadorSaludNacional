@@ -24,12 +24,12 @@ namespace CapaNegocio
         public void insertarTutor(Tutor tutor)
         {
             this.configurarConexion();
-            this.Conec.CadenaSQL = "INSERT INTO dbo.tutor (rut,nombre,apellido,correo,telefono,clave) VALUES ('" + tutor.Rut + 
-                                    "," + tutor.Nombre +
-                                    "," + tutor.Apellido +
-                                    "," + tutor.Correo +
-                                    "," + tutor.Telefono +
-                                    "," + tutor.Clave +
+            this.Conec.CadenaSQL = "INSERT INTO dbo.tutor (rut,nombre,apellido,correo,telefono,clave) VALUES ('"+ tutor.Rut +
+                                    "','" + tutor.Nombre +
+                                    "','" + tutor.Apellido +
+                                    "','" + tutor.Correo +
+                                    "','" + tutor.Telefono +
+                                    "','" + tutor.Clave +
                                     "');";
             this.Conec.EsSelect = false;
             this.Conec.conectar();

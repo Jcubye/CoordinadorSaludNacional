@@ -35,14 +35,14 @@ namespace CapaServicios
 
         }
         [WebMethod]
-        public void eliminarDepartamento(String rut)
+        public void eliminarTutor(String rut)
         {
             NegocioTutor auxNegocio = new NegocioTutor();
             auxNegocio.eliminarTutor(rut);
         }
 
         [WebMethod]
-        public DataSet consultarDepartamento()
+        public DataSet consultarTutor()
         {
             NegocioTutor auxNegocio = new NegocioTutor();
             return auxNegocio.consultarTutor();
