@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E5F61B63-C404-DAA3-CD91-B595B8E3126C" name="CREDENCIAL_TRAZABILIDAD">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 12:56:35 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_credencialt" id="5517563D-D9BE-BCA1-8A19-C99142AD2A95">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 12:57:18 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usuario" id="BE9501A5-00C1-2319-B370-3CFBE76B222C">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 12:57:18 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="clave" id="A32F7C5F-8E02-D40B-91B0-68922C2F6E18">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 12:58:43 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rut_tutor" id="37CF0FED-5ADE-4E7D-8251-A5B56F31AFA4">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 12:58:43 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rut_paciente" id="543C01F3-E641-A888-6B55-0806F200C5DA">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 12:59:51 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RECEPCIONISTA_id_recepcionista" id="7E8470F9-ECC2-6B61-09DF-79AA798769B2">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 13:00:17 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="64B92E3A-700D-961A-408F-3BB3C305D2A0" referredColumn="2E17EEBE-5E96-8C4B-5DA2-7C2ED7F889E5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F21874C2-156D-21F0-EE5B-3A1710B1CA18" name="CREDENCIAL_PK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 12:57:18 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5517563D-D9BE-BCA1-8A19-C99142AD2A95"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9F22C4CF-D7DE-990D-1DE3-6AC6C2EFC5FF" name="CREDENCIAL_RECEPCIONISTA_FK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 13:00:17 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E8470F9-ECC2-6B61-09DF-79AA798769B2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

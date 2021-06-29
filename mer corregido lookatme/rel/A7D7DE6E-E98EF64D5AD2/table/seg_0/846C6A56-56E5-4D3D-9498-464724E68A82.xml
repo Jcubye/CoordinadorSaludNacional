@@ -1,0 +1,207 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="846C6A56-56E5-4D3D-9498-464724E68A82" name="CREDENCIAL_TRABAJADOR">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 15:30:26 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<ordsAlias>table_18</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_credencialt" id="9ACD2751-C6E7-5276-2AA2-785D5CF17FC8">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 15:37:03 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usuario" id="F90D9014-475B-9304-ABC8-68CBF01F8CCA">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 15:37:03 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="clave" id="3A188F4A-EA18-652C-5317-AB5DE6AF6438">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 15:37:03 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estado" id="E141AEA7-E7DD-E113-FAAA-A0BBAAFE3964">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 15:37:03 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TECNICO_ENFERMERIA_ten" id="E7C5851E-BE3F-B53B-0924-3E4CE0E3BEAA">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 16:13:50 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DC56E78B-9652-23B0-7055-33CF1EA4D3D2" referredColumn="26CE41B0-E1E1-C348-E480-FEA0E7BB767F"/>
+</associations>
+</Column>
+<Column name="ENFERMERA_id_enfemera" id="6F72FEDA-A5C9-08D5-2ECB-56E5C621D374">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 16:14:26 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="786BB83A-B5B0-3DAE-A9FC-2F97569C6126" referredColumn="FDE10B24-0D6D-DB46-F596-765033D68B10"/>
+</associations>
+</Column>
+<Column name="DOCTOR_id_doctor" id="DD38AE42-D6F0-BAD4-3ED0-7D65AEADB6A0">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 16:15:31 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="79FABAB9-1A3A-57D1-5F09-B2E6810C36FE" referredColumn="76F6B4E8-6286-A5C6-45F1-ABD31D5F3B14"/>
+</associations>
+</Column>
+<Column name="RECEPCIONISTA_id_recepcionista" id="2E32F747-152E-A783-4DDB-3E867E57FE93">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 16:16:04 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="30F2B0D7-4F90-AF1B-23AB-AA94AC2E527A" referredColumn="2E17EEBE-5E96-8C4B-5DA2-7C2ED7F889E5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7C06265E-E998-5CF0-0D26-7DC4257D88A7" name="CREDENCIAL_TRABAJADOR_PK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 15:37:03 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9ACD2751-C6E7-5276-2AA2-785D5CF17FC8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A7D9E491-A912-AA62-5313-3DD3B6C45F0D" name="CREDENCIAL_TRABAJADOR__IDX">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 16:14:09 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E7C5851E-BE3F-B53B-0924-3E4CE0E3BEAA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6D08251F-1405-1273-9EBA-F8477846AEC2" name="CREDENCIAL_TRABAJADOR__IDXv1">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 16:15:24 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6F72FEDA-A5C9-08D5-2ECB-56E5C621D374"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="14BD534A-4E7C-8C32-8F0B-BFCD51F7F88C" name="CREDENCIAL_TRABAJADOR__IDXv2">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 16:15:49 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DD38AE42-D6F0-BAD4-3ED0-7D65AEADB6A0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2E600238-EC8A-8BAE-9B27-CFE24C774D65" name="CREDENCIAL_TRABAJADOR__IDXv3">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 16:16:17 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2E32F747-152E-A783-4DDB-3E867E57FE93"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B7472EE5-65F4-5835-E99B-069B99A79F1E" name="CREDENCIAL_TRABAJADOR_TECNICO_ENFERMERIA_FK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 16:13:50 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E7C5851E-BE3F-B53B-0924-3E4CE0E3BEAA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7DB41A36-C6C5-16B8-AC46-3E14D678A56B" name="CREDENCIAL_TRABAJADOR_ENFERMERA_FK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 16:14:26 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6F72FEDA-A5C9-08D5-2ECB-56E5C621D374"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AA3AB6AB-CDED-C476-5AB5-1DF000B81417" name="CREDENCIAL_TRABAJADOR_DOCTOR_FK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 16:15:31 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DD38AE42-D6F0-BAD4-3ED0-7D65AEADB6A0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="81FCAC80-D7A3-DEF4-160F-9E9B339CA523" name="CREDENCIAL_TRABAJADOR_RECEPCIONISTA_FK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 16:16:04 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2E32F747-152E-A783-4DDB-3E867E57FE93"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9B9EBF63-4779-51E3-7AA0-FCB2177E9936" name="STOCK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 12:18:28 UTC</createdTime>
+<generatorID>7EE35B6D-D0C3-B313-EE66-F6C28FE176AB</generatorID>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<engineerTo>
+<item key="37C23608-2A27-97D9-64A6-7DEFA12A4062" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="15987C49-C6CD-2F08-5033-C84B32FBB48B">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 12:18:28 UTC</createdTime>
+<generatorID>182E9BD4-3013-F846-C744-2C88BA7F9444</generatorID>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<engineerTo>
+<item key="37C23608-2A27-97D9-64A6-7DEFA12A4062" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="HOSPITALIZACION id" id="AD560212-27D9-B91A-2FA6-194627893720">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 12:18:28 UTC</createdTime>
+<generatorID>1607399D-7714-B4AE-F211-785307864E8F</generatorID>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<engineerTo>
+<item key="37C23608-2A27-97D9-64A6-7DEFA12A4062" value="true"/>
+</engineerTo>
+<referedAttribute>0810BE14-85C6-43E8-11B2-098011EF071E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ARTICULO id" id="80D3E5F6-1A44-2BA4-02B5-085EF9E6192B">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 12:18:28 UTC</createdTime>
+<generatorID>3F563777-E4CD-A8A8-C2A4-7690B537DF04</generatorID>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<engineerTo>
+<item key="37C23608-2A27-97D9-64A6-7DEFA12A4062" value="true"/>
+</engineerTo>
+<referedAttribute>9E61403F-1292-7C5E-A9B4-2B5359B5C337</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CA2FF59F-AA51-06D0-1285-34AAFB2CB11A" name="ALMACEN PK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 12:18:28 UTC</createdTime>
+<generatorID>42839A1F-0277-B3D0-295F-B9DEAE0B7439</generatorID>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<engineerTo>
+<item key="37C23608-2A27-97D9-64A6-7DEFA12A4062" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>15987C49-C6CD-2F08-5033-C84B32FBB48B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

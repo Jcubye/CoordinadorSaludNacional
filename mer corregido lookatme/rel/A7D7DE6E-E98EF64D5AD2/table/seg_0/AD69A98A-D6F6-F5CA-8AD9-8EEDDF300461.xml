@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AD69A98A-D6F6-F5CA-8AD9-8EEDDF300461" name="RECEPCIONISTA">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 09:45:47 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<ordsAlias>table_8</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_recepcionista" id="2E17EEBE-5E96-8C4B-5DA2-7C2ED7F889E5">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 12:42:36 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rut" id="FB2E8DA3-9722-9EA3-8453-F4BB1ADD9A8F">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 12:42:36 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="6940789A-87D6-2DFF-0876-E07A3AA4FA23">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 12:43:50 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="apellido" id="E96F3506-15C8-F406-02ED-B8446616C71D">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 12:43:50 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefono" id="03B64158-50A8-389F-F503-83E6E88E427E">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 12:45:06 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="correo" id="AA50756C-F073-2567-542C-1A8D0435D9D2">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 12:45:06 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7C3B526D-11DD-F803-CC67-B23DEFD579F9" name="RECEPCIONISTA_PK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 12:46:11 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2E17EEBE-5E96-8C4B-5DA2-7C2ED7F889E5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

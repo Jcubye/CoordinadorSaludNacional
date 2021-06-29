@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="776F22BB-CBF8-126E-5843-EFD72D862A42" name="ESP_RRHH">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 15:40:03 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="4B761EEF-4229-10E6-E716-D8DD6C468332">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 15:56:27 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RRHH_id" id="28A880DF-AA20-A941-F69C-81807789EA9D">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 15:59:19 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BB127533-3886-9997-7FEC-DD57EB675AE5" referredColumn="C5D6B964-0671-7BA4-F149-24D9E89620AC"/>
+</associations>
+</Column>
+<Column name="ESPECIALIDAD_id" id="2BE96B2D-0062-1551-E5A5-937642E1B2E5">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 16:00:03 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="92582B28-660A-CE70-B87F-A33EFA7D17CF" referredColumn="E8B5061D-ABF3-6F81-ED78-064D08E9D932"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D6C96A16-B1E6-1FD3-7490-B478FF800B94" name="ESP_RRHH_PK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 15:59:52 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B761EEF-4229-10E6-E716-D8DD6C468332"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="31F90AAF-F366-D200-E62A-B08166285C1E" name="ESP_RRHH_RRHH_FK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 15:59:19 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="28A880DF-AA20-A941-F69C-81807789EA9D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="56C40DC9-67D9-9B33-EE3C-BDA76E7E7B30" name="ESP_RRHH_ESPECIALIDAD_FK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 16:00:03 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2BE96B2D-0062-1551-E5A5-937642E1B2E5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

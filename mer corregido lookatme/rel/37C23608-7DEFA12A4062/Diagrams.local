@@ -1,0 +1,4 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="main_view" objectID="132310F3-9E00-AD3E-B06E-7F1AF18B5C30" name="MER LookAtMe" visible="true"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

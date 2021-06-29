@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7E2752D4-9248-8738-903E-E799FB3B9204" containerWithKeyObject="1E2779C8-A7EC-2320-D28E-751602A09958" localFKIndex="C03702CC-F5E3-EAF2-D4C8-CEF1F5C491AE" name="FUNCIONALIDAD_TRAZABILIDAD_FK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 15:00:57 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<referredTableLongName>TRAZABILIDAD</referredTableLongName>
+<arc>4A2E93D4-4300-4038-333D-203A012FE037</arc>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>90669666-647F-1F75-3C72-2AA6EC4B8701</referredTableID>
+<keyObject>38D8EFFA-1542-DCF0-3DA5-11EC8C8B0078</keyObject>
+<referredKeyID>38D8EFFA-1542-DCF0-3DA5-11EC8C8B0078</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id_trazabilidad</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

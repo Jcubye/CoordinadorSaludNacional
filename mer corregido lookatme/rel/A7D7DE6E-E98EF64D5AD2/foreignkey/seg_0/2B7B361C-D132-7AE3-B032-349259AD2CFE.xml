@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2B7B361C-D132-7AE3-B032-349259AD2CFE" containerWithKeyObject="086A17B8-D082-6EE1-31DF-00995CE323C8" localFKIndex="2078D8A8-7EB0-B3E5-D545-793E1FA2D864" name="DOC_FICHAP_DOCTOR_FK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 15:07:39 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<referredTableLongName>DOCTOR</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>472A6B88-6CDC-9156-FD61-F86D92DD4B2B</referredTableID>
+<keyObject>73FDA2D7-1E22-B22B-D540-1EB325BD77F2</keyObject>
+<referredKeyID>73FDA2D7-1E22-B22B-D540-1EB325BD77F2</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_doctor</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

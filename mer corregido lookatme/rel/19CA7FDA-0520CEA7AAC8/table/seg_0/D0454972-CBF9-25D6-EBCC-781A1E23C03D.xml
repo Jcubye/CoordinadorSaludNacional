@@ -1,0 +1,192 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D0454972-CBF9-25D6-EBCC-781A1E23C03D" name="RRHH">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 09:07:51 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="ECC7E3E3-F068-21E6-CF9E-A50FA1F4CBAC">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 09:13:24 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rut" id="396B146F-67FA-CF84-309C-C9E2F78EDF4F">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 09:13:24 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="1C3D18B4-2DF7-40C2-87F8-821C24655DD7">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 09:13:24 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="apellido" id="41575E90-ACBE-952B-DFA8-1F6CB815514E">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 09:13:24 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefono" id="3A181A0F-EECC-1D53-7E29-486D23F66C4F">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 09:13:24 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="correo" id="CB9E3485-124A-1930-C5E4-B3BE76012B50">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 09:21:29 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dirección" id="C127FA7E-2811-C5E6-39B7-F47F8A1EDB7D">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 09:13:24 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="comuna" id="32195A08-7BFF-819A-FEE6-768EE7D83177">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 09:13:24 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="region" id="8B3F257B-B803-E1C4-CB67-ACD559C77C5B">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 09:13:24 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usuario" id="BD3FBE81-AAE0-E8D3-B61E-D1D3EECEAA7C">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 09:21:29 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="clave" id="C853EBAB-39B7-4B10-B12F-A9A81C3CBFBD">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 09:21:29 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO_RRHH_id" id="C6181208-5009-3FE2-123F-79BEDE948ABE">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 09:38:40 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F0754D1B-5D9E-FE8E-1574-90D25FC603B6" referredColumn="D2B8BE6B-857E-1FC9-687C-59813C45963F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8F99A179-D8C9-CA28-A27C-E3B438BEEBE5" name="RRHH_PK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 09:21:29 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ECC7E3E3-F068-21E6-CF9E-A50FA1F4CBAC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="08E27CE6-06F4-250F-F573-0C19B296F160" name="RRHH__IDX">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 09:21:29 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="396B146F-67FA-CF84-309C-C9E2F78EDF4F" sortOrder="DESC"/>
+<colUsage columnID="C853EBAB-39B7-4B10-B12F-A9A81C3CBFBD" sortOrder="DESC"/>
+<colUsage columnID="BD3FBE81-AAE0-E8D3-B61E-D1D3EECEAA7C" sortOrder="DESC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2DEBF4F1-7F03-7C67-B51C-302D588F02F9" name="RRHH_TIPO_RRHH_FK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 09:38:40 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C6181208-5009-3FE2-123F-79BEDE948ABE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

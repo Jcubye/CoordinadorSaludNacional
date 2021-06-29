@@ -1,0 +1,148 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="09ECBC89-376F-21A1-DF2B-BD2136C8C2A5" name="HOSPITALIZACION">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 12:18:28 UTC</createdTime>
+<generatorID>3CB5125C-8A9C-26D0-5ACD-AB4C2B19DF48</generatorID>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<engineerTo>
+<item key="37C23608-2A27-97D9-64A6-7DEFA12A4062" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="0810BE14-85C6-43E8-11B2-098011EF071E">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 12:18:28 UTC</createdTime>
+<generatorID>B16F8E6A-C0A9-BA36-CD9A-20CE61F830D2</generatorID>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<engineerTo>
+<item key="37C23608-2A27-97D9-64A6-7DEFA12A4062" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha ingreso" id="74168A86-6EFE-5CFF-4DB3-B8789F82B223">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 12:18:28 UTC</createdTime>
+<generatorID>9A3F5647-555B-8A90-FE98-5B580E82A507</generatorID>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<engineerTo>
+<item key="37C23608-2A27-97D9-64A6-7DEFA12A4062" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="estado" id="5B8AA868-9FBE-1138-42BD-AC063E7DFFAA">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 12:18:28 UTC</createdTime>
+<generatorID>F9684E83-F992-8026-EC53-0A8766360BC9</generatorID>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<engineerTo>
+<item key="37C23608-2A27-97D9-64A6-7DEFA12A4062" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha alta" id="3C7591B3-AF3C-E029-C579-E31599DEF43F">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 12:18:28 UTC</createdTime>
+<generatorID>C0C90929-F4C1-4E0C-E303-E674F21FC521</generatorID>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<engineerTo>
+<item key="37C23608-2A27-97D9-64A6-7DEFA12A4062" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="criticidad" id="7658D0A3-089B-7033-AE36-AFC078BCC3BB">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 12:18:28 UTC</createdTime>
+<generatorID>4F3A3279-B218-9DE1-BA54-1FB47D1C5EFC</generatorID>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<engineerTo>
+<item key="37C23608-2A27-97D9-64A6-7DEFA12A4062" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="detalles" id="EA272D46-044D-1BC6-F44E-1DBCA25629EA">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 12:18:28 UTC</createdTime>
+<generatorID>9DB3F5AF-D518-F99E-2BE3-10E315644691</generatorID>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<engineerTo>
+<item key="37C23608-2A27-97D9-64A6-7DEFA12A4062" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PACIENTE ID" id="3BA6F696-DD25-1193-D9F1-5FFAB5DACD26">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 12:18:28 UTC</createdTime>
+<generatorID>5A2DDDCA-E6B3-3993-7708-B34414CF9B5D</generatorID>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<engineerTo>
+<item key="37C23608-2A27-97D9-64A6-7DEFA12A4062" value="true"/>
+</engineerTo>
+<referedAttribute>CB9ACE6A-E687-EAC1-DB75-EE5591BF625F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="UBICACION id" id="AA2611AC-F360-0342-CD45-F0571F71F78D">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 12:18:28 UTC</createdTime>
+<generatorID>080CF20A-9591-4F58-2FE0-CFD2EE883C7D</generatorID>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<engineerTo>
+<item key="37C23608-2A27-97D9-64A6-7DEFA12A4062" value="true"/>
+</engineerTo>
+<referedAttribute>2E16CA10-A65B-AC91-C4B5-9DE4DEE43D8E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="547CAA97-9543-E221-22F3-2A1367962426" name="HOSPITALIZACION PK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 12:18:28 UTC</createdTime>
+<generatorID>940361B6-049A-FF5E-EC04-E9C6691E5853</generatorID>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<engineerTo>
+<item key="37C23608-2A27-97D9-64A6-7DEFA12A4062" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0810BE14-85C6-43E8-11B2-098011EF071E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

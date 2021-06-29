@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="VIDEOLLAMADA_PACIENTE_FK" directorySegmentName="seg_0" id="19F21394-C795-C57E-AD6D-F0D7A365BFC8">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 12:18:29 UTC</createdTime>
+<generatorID>57AD4236-3863-D571-CFEC-D04470269475</generatorID>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<engineerTo>
+<item key="37C23608-2A27-97D9-64A6-7DEFA12A4062" value="true"/>
+</engineerTo>
+<sourcePk>CAABA4A9-A2CA-C990-4776-2C0A05E9FB4D</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>5A67C867-73D3-4C4C-5A3D-D2761A256138</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>BFDE4289-B999-B307-B1CF-FE481B2BDCF1</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

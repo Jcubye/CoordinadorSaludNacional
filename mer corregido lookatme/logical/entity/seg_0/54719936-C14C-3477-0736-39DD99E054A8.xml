@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="54719936-C14C-3477-0736-39DD99E054A8" name="ESP RRHH">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 12:18:28 UTC</createdTime>
+<generatorID>776F22BB-CBF8-126E-5843-EFD72D862A42</generatorID>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<engineerTo>
+<item key="37C23608-2A27-97D9-64A6-7DEFA12A4062" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="92E359C6-E017-FA72-B3E3-E1177DA7BF84">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 12:18:28 UTC</createdTime>
+<generatorID>4B761EEF-4229-10E6-E716-D8DD6C468332</generatorID>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<engineerTo>
+<item key="37C23608-2A27-97D9-64A6-7DEFA12A4062" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RRHH id" id="9E94D5E3-6D93-00B7-A622-187991B57FD0">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 12:18:28 UTC</createdTime>
+<generatorID>0B068ED5-2A19-81AD-3248-D52758753A61</generatorID>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<engineerTo>
+<item key="37C23608-2A27-97D9-64A6-7DEFA12A4062" value="true"/>
+</engineerTo>
+<referedAttribute>9046AC2F-082F-E12B-57B3-D7AB3C58D5B5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ESPECIALIDAD id" id="A1A2AAB6-BD1E-A3A7-6605-375B6EC11252">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 12:18:28 UTC</createdTime>
+<generatorID>98ABBC31-60B5-60B8-4703-D369E15DB257</generatorID>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<engineerTo>
+<item key="37C23608-2A27-97D9-64A6-7DEFA12A4062" value="true"/>
+</engineerTo>
+<referedAttribute>78F88199-9E38-5A04-3812-63BBBA6874BD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="90D2BED4-A653-EA3A-4042-7BE9CE6AB157" name="ESP RRHH PK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 12:18:28 UTC</createdTime>
+<generatorID>D6C96A16-B1E6-1FD3-7490-B478FF800B94</generatorID>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<engineerTo>
+<item key="37C23608-2A27-97D9-64A6-7DEFA12A4062" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>92E359C6-E017-FA72-B3E3-E1177DA7BF84</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

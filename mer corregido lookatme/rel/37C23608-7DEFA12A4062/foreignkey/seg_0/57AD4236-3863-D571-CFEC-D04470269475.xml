@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="57AD4236-3863-D571-CFEC-D04470269475" containerWithKeyObject="D7784A6F-5D5F-1DB8-CCBE-7718FD48B3FF" localFKIndex="CBBCDB67-759C-CE19-6C7B-13D34149A383" name="VIDEOLLAMADA_PACIENTE_FK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 12:10:54 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<referredTableLongName>PACIENTE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6ED277AC-DC10-7FA8-7F07-00391FB4F167</referredTableID>
+<keyObject>0AF3781A-3AA2-1AA8-373C-B8B13A5D24AC</keyObject>
+<referredKeyID>0AF3781A-3AA2-1AA8-373C-B8B13A5D24AC</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

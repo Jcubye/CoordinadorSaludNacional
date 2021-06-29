@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKArc class="oracle.dbtools.crest.model.design.relational.FKArc" directorySegmentName="seg_0" id="4A2E93D4-4300-4038-333D-203A012FE037" name="FKArc_1">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 15:02:40 UTC</createdTime>
+<ownerDesignName>MR Trazabilidad Paciente</ownerDesignName>
+<mandatory>false</mandatory>
+<table>1E2779C8-A7EC-2320-D28E-751602A09958</table>
+<fkeys>
+<fkeyID>489B10DA-4259-0B94-04FD-80B049D1BBCF</fkeyID>
+<fkeyID>E022C617-4E47-2A8D-4028-3506635C44D2</fkeyID>
+<fkeyID>7E2752D4-9248-8738-903E-E799FB3B9204</fkeyID>
+</fkeys>
+</FKArc>

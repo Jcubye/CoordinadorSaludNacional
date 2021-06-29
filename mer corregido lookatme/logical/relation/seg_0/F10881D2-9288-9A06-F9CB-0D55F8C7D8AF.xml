@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="EQUIPO_MEDICO_EPICRISIS_FK" directorySegmentName="seg_0" id="F10881D2-9288-9A06-F9CB-0D55F8C7D8AF">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 12:18:28 UTC</createdTime>
+<generatorID>3F9C122B-3235-F694-64B1-976D058266C8</generatorID>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<engineerTo>
+<item key="37C23608-2A27-97D9-64A6-7DEFA12A4062" value="true"/>
+</engineerTo>
+<sourcePk>BBEC1574-C714-221A-2A51-378B618B5483</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C8C7759D-D2CE-3DBB-A0DD-B1C0FC020A74</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E7E45232-73DD-C3DE-2540-BB47E7790261</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

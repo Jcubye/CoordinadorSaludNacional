@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1D920966-1FB8-C6D8-3446-220B17BDF1B3" name="EQUIPO_MEDICO">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 10:35:32 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="B6E29A4B-D0D8-B766-45CC-466180690624">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 10:40:18 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="detalle" id="08A1641A-214A-D873-14E0-1FA09548E702">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 10:40:18 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_inicio" id="E691C3D4-A773-BEA1-61D9-941D97E79356">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 10:41:08 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_termino" id="9ACF68E5-CFA4-B7B5-9CA0-A45DA67978B1">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 10:41:08 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="95CF2B7B-387C-3BBC-C58E-CA107F612D01" name="EQUIPO_MEDICO_PK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 10:40:18 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B6E29A4B-D0D8-B766-45CC-466180690624"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

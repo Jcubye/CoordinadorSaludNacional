@@ -16,5 +16,17 @@ namespace CapaGUI
         {
             InitializeComponent();
         }
+
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+            PantallaRegistroTutor pRegistroTutor = new PantallaRegistroTutor();
+            pRegistroTutor.ShowDialog();
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            System.GC.Collect();
+        }
     }
 }

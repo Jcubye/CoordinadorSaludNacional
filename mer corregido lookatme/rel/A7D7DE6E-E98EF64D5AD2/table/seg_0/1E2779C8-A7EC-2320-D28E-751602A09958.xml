@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1E2779C8-A7EC-2320-D28E-751602A09958" name="FUNCIONALIDAD">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 13:20:08 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_funcionalidad" id="8076E29A-4531-29DB-01BD-CFC72EAE8FE4">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 13:30:10 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha" id="6FD81ACB-6024-8E0D-0C5C-182CC1922EB0">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 13:30:10 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PACIENTE_id_paciente" id="4EB25E19-CE41-E276-FF16-8D98F6BB62CF">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 14:07:09 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="581D5137-67F3-4E1E-151C-E4880CC414F9" referredColumn="7E7056CB-B021-8A81-E630-EEE3DC089E8C"/>
+</associations>
+</Column>
+<Column name="TRAZABILIDAD_id_trazabilidad" id="8E69A36B-81DB-0A92-EDF0-A406CA4A82C0">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 15:00:57 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7E2752D4-9248-8738-903E-E799FB3B9204" referredColumn="D73AF2B2-CA3D-5CAC-7947-8C5B6D593AF3"/>
+</associations>
+</Column>
+<Column name="OBJETOS_PACIENTE_id_objetos_cliente" id="E8A42169-35CA-2056-DAAA-1808D647CB24">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 15:01:29 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E022C617-4E47-2A8D-4028-3506635C44D2" referredColumn="62C5BC02-6D0A-1AA8-0851-3FC7269D579C"/>
+</associations>
+</Column>
+<Column name="COMUNICACION_id_trazabilidad" id="05A3E606-7CF8-23E6-F5C2-ED306642D529">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 15:01:48 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="489B10DA-4259-0B94-04FD-80B049D1BBCF" referredColumn="127CA25D-B78A-5921-713A-2E9DE97B023A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="93419E45-F019-5A79-A9EA-F639BA7A3AE7" name="FUNCIONALIDAD_PK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 13:30:10 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8076E29A-4531-29DB-01BD-CFC72EAE8FE4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="845AAA74-D93B-EDF6-2991-A5785CCE3DB0" name="FUNCIONALIDAD_PACIENTE_FK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 14:07:09 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4EB25E19-CE41-E276-FF16-8D98F6BB62CF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C03702CC-F5E3-EAF2-D4C8-CEF1F5C491AE" name="FUNCIONALIDAD_TRAZABILIDAD_FK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 15:00:57 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E69A36B-81DB-0A92-EDF0-A406CA4A82C0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="57C255B3-6C11-7128-66C3-6F124106645F" name="FUNCIONALIDAD_OBJETOS_PACIENTE_FK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 15:01:29 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E8A42169-35CA-2056-DAAA-1808D647CB24"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3D093F8A-DAC6-48E2-28B6-AD537EBA070D" name="FUNCIONALIDAD_COMUNICACION_FK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 15:01:48 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="05A3E606-7CF8-23E6-F5C2-ED306642D529"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

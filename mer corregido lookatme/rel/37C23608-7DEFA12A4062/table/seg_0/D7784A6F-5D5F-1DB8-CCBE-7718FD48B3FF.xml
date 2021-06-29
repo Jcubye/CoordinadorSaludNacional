@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D7784A6F-5D5F-1DB8-CCBE-7718FD48B3FF" name="VIDEOLLAMADA">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 12:07:06 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<ordsAlias>table_14</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="7A15404A-0BD5-F7C8-022A-6D36519E79D2">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 12:10:44 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="disponibilidad" id="3B344FA5-6CCE-52B3-9F44-8B5B7283D951">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 12:10:44 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha" id="E69568F5-17F2-B31A-CE1C-9FFDB62E7AB3">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 12:10:44 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="75C63B1F-D818-45EF-DF70-BFC46322A595">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 12:10:44 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PACIENTE_id" id="B1635533-BDD6-C2E0-81FE-680218B8D62A">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 12:10:54 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="57AD4236-3863-D571-CFEC-D04470269475" referredColumn="B87A86AA-E7D2-0833-1197-10DB381F846D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C6260190-7D32-9F71-9966-F9E7F749C7A7" name="VIDEOLLAMADA_PK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 12:10:44 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7A15404A-0BD5-F7C8-022A-6D36519E79D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CBBCDB67-759C-CE19-6C7B-13D34149A383" name="VIDEOLLAMADA_PACIENTE_FK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 12:10:54 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B1635533-BDD6-C2E0-81FE-680218B8D62A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

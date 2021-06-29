@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3F9C122B-3235-F694-64B1-976D058266C8" containerWithKeyObject="4988BD87-5FA0-9BE5-75CF-C7E641269DD9" localFKIndex="017CFA94-E2CB-3A48-E1FC-783354134F65" name="EQUIPO_MED_EPI_FK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 05:35:29 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<referredTableLongName>EPICRISIS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D709C85B-BE16-A36D-DDC9-5C916E04233B</referredTableID>
+<keyObject>4CCD85B4-A22A-407A-66A0-F70A6918B51B</keyObject>
+<referredKeyID>4CCD85B4-A22A-407A-66A0-F70A6918B51B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

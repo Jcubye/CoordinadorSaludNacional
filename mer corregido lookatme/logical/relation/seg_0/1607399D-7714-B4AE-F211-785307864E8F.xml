@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="STOCK_HOSPITALIZACION_FK" directorySegmentName="seg_0" id="1607399D-7714-B4AE-F211-785307864E8F">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 12:18:29 UTC</createdTime>
+<generatorID>0B7985FB-15D5-3812-9BD4-89A438F7BCA8</generatorID>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<engineerTo>
+<item key="37C23608-2A27-97D9-64A6-7DEFA12A4062" value="true"/>
+</engineerTo>
+<sourcePk>547CAA97-9543-E221-22F3-2A1367962426</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>09ECBC89-376F-21A1-DF2B-BD2136C8C2A5</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>9B9EBF63-4779-51E3-7AA0-FCB2177E9936</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,154 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4988BD87-5FA0-9BE5-75CF-C7E641269DD9" name="EQUIPO_MEDICO">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 15:51:52 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="B560FA95-BDF0-1E84-C267-933222305468">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 15:52:22 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="responsable" id="98CD7D9B-5754-7E6F-F9C6-29CB2D42D876">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 05:18:13 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_conformacion" id="2C289190-A1CF-CEA5-43DA-BD643B883E42">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 05:15:55 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cantidad_personal" id="287BEFD8-68DD-6656-B332-A79557342594">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 05:15:55 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="detalle_personal" id="F22325F0-6F66-A1C9-5F72-82559C9FE01C">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 05:18:13 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RRHH_id" id="34121A69-69D4-590E-3BE4-D2A54344B8B1">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 16:17:29 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EFB467D1-4232-285C-5104-8CEA86C24648" referredColumn="C5D6B964-0671-7BA4-F149-24D9E89620AC"/>
+</associations>
+</Column>
+<Column name="HOSPITALIZACION_id" id="9B7B4B35-A729-E048-E716-65D0004C1293">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 04:42:12 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="843569B7-D077-2B75-841D-A63075C3FAE1" referredColumn="B16F8E6A-C0A9-BA36-CD9A-20CE61F830D2"/>
+</associations>
+</Column>
+<Column name="EPICRISIS_id" id="78E256DA-4E6F-AF6A-DF83-A4676C265A27">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 05:35:29 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3F9C122B-3235-F694-64B1-976D058266C8" referredColumn="3F4B81A2-2F3A-6B0F-DC4A-C7EC029364D2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6D751124-4473-1B9B-DE8F-C670BAD837B4" name="EQUIPO_MEDICO_PK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 15:52:22 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B560FA95-BDF0-1E84-C267-933222305468"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="64776CD7-7B48-9D0A-BB80-D376935D6933" name="EQUIPO_MEDICO_RRHH_FK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 16:17:29 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="34121A69-69D4-590E-3BE4-D2A54344B8B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D226FDC3-E29D-F50D-C454-03164674AFAE" name="EQUIPO_MED_HOSP_FK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 04:42:12 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9B7B4B35-A729-E048-E716-65D0004C1293"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="017CFA94-E2CB-3A48-E1FC-783354134F65" name="EQUIPO_MED_EPI_FK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 05:35:29 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="78E256DA-4E6F-AF6A-DF83-A4676C265A27"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

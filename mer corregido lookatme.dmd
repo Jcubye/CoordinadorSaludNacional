@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="mer corregido lookatme" id="1237772E-7E99-E8C2-3AEE-CBEB8EBB941A" version="3.5">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 09:43:12 UTC</createdTime>
+<ownerDesignName>MR Trazabilidad Paciente</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>1237772E-7E99-E8C2-3AEE-CBEB8EBB941A</designId>
+</OSDM_Design>

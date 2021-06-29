@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="insertarTutor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tutor" type="tns:Tutor" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Tutor">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Rut" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Apellido" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Correo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Telefono" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Clave" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="insertarTutorResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="actualizarTutor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tutor" type="tns:Tutor" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="actualizarTutorResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="eliminarDepartamento">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="rut" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="eliminarDepartamentoResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="consultarDepartamento">
+        <s:complexType />
+      </s:element>
+      <s:element name="consultarDepartamentoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="consultarDepartamentoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="buscaTutor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="rut" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="buscaTutorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="buscaTutorResult" type="tns:Tutor" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="posicionTutor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="fila" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="posicionTutorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="posicionTutorResult" type="tns:Tutor" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="insertarTutorSoapIn">
+    <wsdl:part name="parameters" element="tns:insertarTutor" />
+  </wsdl:message>
+  <wsdl:message name="insertarTutorSoapOut">
+    <wsdl:part name="parameters" element="tns:insertarTutorResponse" />
+  </wsdl:message>
+  <wsdl:message name="actualizarTutorSoapIn">
+    <wsdl:part name="parameters" element="tns:actualizarTutor" />
+  </wsdl:message>
+  <wsdl:message name="actualizarTutorSoapOut">
+    <wsdl:part name="parameters" element="tns:actualizarTutorResponse" />
+  </wsdl:message>
+  <wsdl:message name="eliminarDepartamentoSoapIn">
+    <wsdl:part name="parameters" element="tns:eliminarDepartamento" />
+  </wsdl:message>
+  <wsdl:message name="eliminarDepartamentoSoapOut">
+    <wsdl:part name="parameters" element="tns:eliminarDepartamentoResponse" />
+  </wsdl:message>
+  <wsdl:message name="consultarDepartamentoSoapIn">
+    <wsdl:part name="parameters" element="tns:consultarDepartamento" />
+  </wsdl:message>
+  <wsdl:message name="consultarDepartamentoSoapOut">
+    <wsdl:part name="parameters" element="tns:consultarDepartamentoResponse" />
+  </wsdl:message>
+  <wsdl:message name="buscaTutorSoapIn">
+    <wsdl:part name="parameters" element="tns:buscaTutor" />
+  </wsdl:message>
+  <wsdl:message name="buscaTutorSoapOut">
+    <wsdl:part name="parameters" element="tns:buscaTutorResponse" />
+  </wsdl:message>
+  <wsdl:message name="posicionTutorSoapIn">
+    <wsdl:part name="parameters" element="tns:posicionTutor" />
+  </wsdl:message>
+  <wsdl:message name="posicionTutorSoapOut">
+    <wsdl:part name="parameters" element="tns:posicionTutorResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServicioTutorSoap">
+    <wsdl:operation name="insertarTutor">
+      <wsdl:input message="tns:insertarTutorSoapIn" />
+      <wsdl:output message="tns:insertarTutorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="actualizarTutor">
+      <wsdl:input message="tns:actualizarTutorSoapIn" />
+      <wsdl:output message="tns:actualizarTutorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="eliminarDepartamento">
+      <wsdl:input message="tns:eliminarDepartamentoSoapIn" />
+      <wsdl:output message="tns:eliminarDepartamentoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="consultarDepartamento">
+      <wsdl:input message="tns:consultarDepartamentoSoapIn" />
+      <wsdl:output message="tns:consultarDepartamentoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="buscaTutor">
+      <wsdl:input message="tns:buscaTutorSoapIn" />
+      <wsdl:output message="tns:buscaTutorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="posicionTutor">
+      <wsdl:input message="tns:posicionTutorSoapIn" />
+      <wsdl:output message="tns:posicionTutorSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServicioTutorSoap" type="tns:ServicioTutorSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="insertarTutor">
+      <soap:operation soapAction="http://tempuri.org/insertarTutor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="actualizarTutor">
+      <soap:operation soapAction="http://tempuri.org/actualizarTutor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="eliminarDepartamento">
+      <soap:operation soapAction="http://tempuri.org/eliminarDepartamento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarDepartamento">
+      <soap:operation soapAction="http://tempuri.org/consultarDepartamento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscaTutor">
+      <soap:operation soapAction="http://tempuri.org/buscaTutor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="posicionTutor">
+      <soap:operation soapAction="http://tempuri.org/posicionTutor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServicioTutorSoap12" type="tns:ServicioTutorSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="insertarTutor">
+      <soap12:operation soapAction="http://tempuri.org/insertarTutor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="actualizarTutor">
+      <soap12:operation soapAction="http://tempuri.org/actualizarTutor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="eliminarDepartamento">
+      <soap12:operation soapAction="http://tempuri.org/eliminarDepartamento" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarDepartamento">
+      <soap12:operation soapAction="http://tempuri.org/consultarDepartamento" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscaTutor">
+      <soap12:operation soapAction="http://tempuri.org/buscaTutor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="posicionTutor">
+      <soap12:operation soapAction="http://tempuri.org/posicionTutor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServicioTutor">
+    <wsdl:port name="ServicioTutorSoap" binding="tns:ServicioTutorSoap">
+      <soap:address location="https://localhost:44343/ServicioTutor.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServicioTutorSoap12" binding="tns:ServicioTutorSoap12">
+      <soap12:address location="https://localhost:44343/ServicioTutor.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

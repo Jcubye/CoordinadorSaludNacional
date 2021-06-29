@@ -1,0 +1,362 @@
+--Corregir el drop table segun las FK
+--DROP TABLE equipo_medico;
+--DROP TABLE epicrisis;
+--DROP TABLE esp_rrhh;
+--DROP TABLE especialidad;
+--DROP TABLE rrhh;
+--DROP TABLE cargo;
+--DROP TABLE departamento;
+--DROP TABLE tutor;
+--DROP TABLE paciente;
+--DROP TABLE videollamada;
+--DROP TABLE ubicacion;
+--DROP TABLE articulo;
+--DROP TABLE hospitalizacion;
+--DROP TABLE stock;
+
+CREATE TABLE articulo (
+    id            INTEGER NOT NULL IDENTITY(1,1),
+    producto      VARCHAR(50),
+    cantidad      INTEGER,
+    descripcion   VARCHAR(200)
+);
+
+ALTER TABLE articulo ADD CONSTRAINT articulo_pk PRIMARY KEY ( id );
+
+CREATE TABLE cargo (
+    id                INTEGER NOT NULL IDENTITY(1,1),
+    nombre            VARCHAR(50),
+    fecha_inicio      DATE,
+    descripcion       VARCHAR(200),
+    estado            VARCHAR(20),
+    departamento_id   INTEGER NOT NULL
+);
+
+ALTER TABLE cargo ADD CONSTRAINT cargo_pk PRIMARY KEY ( id );
+
+CREATE TABLE departamento (
+    id       INTEGER NOT NULL IDENTITY(1,1),
+    nombre   VARCHAR(50)
+);
+
+ALTER TABLE departamento ADD CONSTRAINT departamento_pk PRIMARY KEY ( id );
+
+CREATE TABLE epicrisis (
+    id            INTEGER NOT NULL IDENTITY(1,1),
+    fecha         DATE,
+    detalle       VARCHAR(500),
+    diagnostico   VARCHAR(500),
+    tratamiento   VARCHAR(500)
+);
+
+ALTER TABLE epicrisis ADD CONSTRAINT epicrisis_pk PRIMARY KEY ( id );
+
+CREATE TABLE equipo_medico (
+    id                   INTEGER NOT NULL IDENTITY(1,1),
+    responsable          VARCHAR(50),
+    fecha_conformacion   DATE,
+    cantidad_personal    INTEGER,
+    detalle_personal     VARCHAR(500),
+    rrhh_id              INTEGER NOT NULL,
+    hospitalizacion_id   INTEGER NOT NULL,
+    epicrisis_id         INTEGER NOT NULL
+);
+
+ALTER TABLE equipo_medico ADD CONSTRAINT equipo_medico_pk PRIMARY KEY ( id );
+
+CREATE TABLE esp_rrhh (
+    id                INTEGER NOT NULL IDENTITY(1,1),
+    rrhh_id           INTEGER NOT NULL,
+    especialidad_id   INTEGER NOT NULL
+);
+
+ALTER TABLE esp_rrhh ADD CONSTRAINT esp_rrhh_pk PRIMARY KEY ( id );
+
+CREATE TABLE especialidad (
+    id       INTEGER NOT NULL IDENTITY(1,1),
+    nombre   NVARCHAR(50)
+);
+
+ALTER TABLE especialidad ADD CONSTRAINT especialidad_pk PRIMARY KEY ( id );
+
+CREATE TABLE hospitalizacion (
+    id              INTEGER NOT NULL IDENTITY(1,1) ,
+    fecha_ingreso   DATE,
+    estado          VARCHAR(20),
+    fecha_alta      DATE,
+    criticidad      INTEGER,
+    detalles        VARCHAR(500),
+    paciente_id     INTEGER NOT NULL,
+    ubicacion_id    INTEGER NOT NULL
+);
+
+ALTER TABLE hospitalizacion ADD CONSTRAINT hospitalizacion_pk PRIMARY KEY ( id );
+
+CREATE TABLE paciente (
+    id                 INTEGER NOT NULL IDENTITY(1,1),
+    rut                VARCHAR(20),
+    nombre             VARCHAR(20),
+    apellido           VARCHAR(20),
+    fecha_nacimiento   DATE,
+    genero             VARCHAR(20),
+    direccion          VARCHAR(50),
+    comuna             VARCHAR(50),
+    region             VARCHAR(50),
+    telefono           VARCHAR(50),
+    antecedentes       VARCHAR(200),
+    tutor_id           INTEGER NOT NULL
+);
+
+ALTER TABLE paciente ADD CONSTRAINT paciente_pk PRIMARY KEY ( id );
+
+CREATE TABLE rrhh
+
+(
+    id      INTEGER NOT NULL IDENTITY(1,1),
+    rut     VARCHAR(20),
+    clave   VARCHAR(20) NOT NULL,
+    estado  VARCHAR(20) NOT NULL,
+    nombre  VARCHAR(20) NOT NULL,
+    apellido VARCHAR(20) NOT NULL,
+    fecha_nac DATE NOT NULL,
+    telefono  VARCHAR(20) NOT NULL,
+    correo    VARCHAR(50) NOT NULL,
+    cargo_id  INTEGER     NOT NULL,
+    ) 
+;
+
+ALTER TABLE rrhh ADD CONSTRAINT rrhh_pk PRIMARY KEY ( id );
+
+CREATE TABLE stock (
+    id                   INTEGER NOT NULL IDENTITY(1,1),
+    hospitalizacion_id   INTEGER NOT NULL,
+    articulo_id          INTEGER NOT NULL
+);
+
+ALTER TABLE stock ADD CONSTRAINT almacen_pk PRIMARY KEY ( id );
+
+CREATE TABLE tutor (
+    id         INTEGER NOT NULL IDENTITY(1,1),
+    rut        VARCHAR(20),
+    nombre     VARCHAR(20),
+    apellido   VARCHAR(20),
+    correo     VARCHAR(50),
+    telefono   VARCHAR(20),
+    clave      VARCHAR(20)
+);
+
+ALTER TABLE tutor ADD CONSTRAINT tutor_pk PRIMARY KEY ( id );
+
+CREATE TABLE ubicacion (
+    id         INTEGER NOT NULL IDENTITY(1,1),
+    sala       INTEGER,
+    cama       INTEGER,
+    area       VARCHAR(50),
+    edificio   VARCHAR(50)
+);
+
+ALTER TABLE ubicacion ADD CONSTRAINT ubicacion_pk PRIMARY KEY ( id );
+
+CREATE TABLE videollamada (
+    id               INTEGER NOT NULL IDENTITY(1,1),
+    disponibilidad   VARCHAR(20),
+    fecha            DATE,
+    descripcion      VARCHAR(200),
+    paciente_id      INTEGER NOT NULL
+);
+
+ALTER TABLE videollamada ADD CONSTRAINT videollamada_pk PRIMARY KEY ( id );
+
+ALTER TABLE cargo
+    ADD CONSTRAINT cargo_departamento_fk FOREIGN KEY ( departamento_id )
+        REFERENCES departamento ( id );
+
+ALTER TABLE equipo_medico
+    ADD CONSTRAINT equipo_med_epi_fk FOREIGN KEY ( epicrisis_id )
+        REFERENCES epicrisis ( id );
+
+ALTER TABLE equipo_medico
+    ADD CONSTRAINT equipo_med_hosp_fk FOREIGN KEY ( hospitalizacion_id )
+        REFERENCES hospitalizacion ( id );
+
+ALTER TABLE equipo_medico
+    ADD CONSTRAINT equipo_medico_rrhh_fk FOREIGN KEY ( rrhh_id )
+        REFERENCES rrhh ( id );
+
+ALTER TABLE esp_rrhh
+    ADD CONSTRAINT esp_rrhh_especialidad_fk FOREIGN KEY ( especialidad_id )
+        REFERENCES especialidad ( id );
+
+ALTER TABLE esp_rrhh
+    ADD CONSTRAINT esp_rrhh_rrhh_fk FOREIGN KEY ( rrhh_id )
+        REFERENCES rrhh ( id );
+
+ALTER TABLE hospitalizacion
+    ADD CONSTRAINT hospitalizacion_paciente_fk FOREIGN KEY ( paciente_id )
+        REFERENCES paciente ( id );
+
+ALTER TABLE hospitalizacion
+    ADD CONSTRAINT hospitalizacion_ubicacion_fk FOREIGN KEY ( ubicacion_id )
+        REFERENCES ubicacion ( id );
+
+ALTER TABLE paciente
+    ADD CONSTRAINT paciente_tutor_fk FOREIGN KEY ( tutor_id )
+        REFERENCES tutor ( id );
+
+ALTER TABLE rrhh
+  ADD CONSTRAINT rrhh_cargo_fk FOREIGN KEY ( cargo_id )
+        REFERENCES cargo ( id );
+
+ALTER TABLE stock
+    ADD CONSTRAINT stock_articulo_fk FOREIGN KEY ( articulo_id )
+        REFERENCES articulo ( id );
+
+ALTER TABLE stock
+    ADD CONSTRAINT stock_hospitalizacion_fk FOREIGN KEY ( hospitalizacion_id )
+        REFERENCES hospitalizacion ( id );
+
+ALTER TABLE videollamada
+    ADD CONSTRAINT videollamada_paciente_fk FOREIGN KEY ( paciente_id )
+        REFERENCES paciente ( id );
+
+
+
+--CREATE OR REPLACE TRIGGER articulo_id_trg BEFORE
+--    INSERT ON articulo
+--    FOR EACH ROW
+--    WHEN ( new.id IS NULL )
+--BEGIN
+--    :new.id := articulo_id_seq.nextval;
+--END;
+--/
+
+--CREATE SEQUENCE cargo_id_seq START WITH 1;
+
+--CREATE OR REPLACE TRIGGER cargo_id_trg BEFORE
+--    INSERT ON cargo
+--    FOR EACH ROW
+--    WHEN ( new.id IS NULL )
+--BEGIN
+--    :new.id := cargo_id_seq.nextval;
+--END;
+--/
+
+--CREATE SEQUENCE departamento_id_seq START WITH 1;
+
+--CREATE OR ALTER TRIGGER departamento_id_trg BEFORE
+--    INSERT ON departamento
+--    FOR EACH ROW
+--    WHEN ( new.id IS NULL )
+--BEGIN
+--    :new.id := departamento_id_seq.nextval;
+--END;
+--/
+
+--CREATE SEQUENCE epicrisis_id_seq START WITH 1;
+
+--CREATE OR REPLACE TRIGGER epicrisis_id_trg BEFORE
+--    INSERT ON epicrisis
+--    FOR EACH ROW
+--    WHEN ( new.id IS NULL )
+--BEGIN
+--    :new.id := epicrisis_id_seq.nextval;
+--END;
+--/
+
+--CREATE SEQUENCE equipo_medico_id_seq START WITH 1 ;
+
+--CREATE OR REPLACE TRIGGER equipo_medico_id_trg BEFORE
+--    INSERT ON equipo_medico
+--    FOR EACH ROW
+--    WHEN ( new.id IS NULL )
+--BEGIN
+--    :new.id := equipo_medico_id_seq.nextval;
+--END;
+--/
+
+--CREATE SEQUENCE esp_rrhh_id_seq START WITH 1 ;
+
+--CREATE OR REPLACE TRIGGER esp_rrhh_id_trg BEFORE
+--    INSERT ON esp_rrhh
+--    FOR EACH ROW
+--    WHEN ( new.id IS NULL )
+--BEGIN
+--    :new.id := esp_rrhh_id_seq.nextval;
+--END;
+--/
+
+--CREATE SEQUENCE especialidad_id_seq START WITH 1;
+
+--CREATE OR REPLACE TRIGGER especialidad_id_trg BEFORE
+--    INSERT ON especialidad
+--    FOR EACH ROW
+--    WHEN ( new.id IS NULL )
+--BEGIN
+--    :new.id := especialidad_id_seq.nextval;
+--END;
+--/
+
+--CREATE SEQUENCE hospitalizacion_id_seq START WITH 1 ;
+
+--CREATE OR REPLACE TRIGGER hospitalizacion_id_trg BEFORE
+--    INSERT ON hospitalizacion
+--    FOR EACH ROW
+--    WHEN ( new.id IS NULL )
+--BEGIN
+--    :new.id := hospitalizacion_id_seq.nextval;
+--END;
+--/
+
+--CREATE SEQUENCE paciente_id_seq START WITH 1 ;
+
+--CREATE OR REPLACE TRIGGER paciente_id_trg BEFORE
+--    INSERT ON paciente
+--    FOR EACH ROW
+--    WHEN ( new.id IS NULL )
+--BEGIN
+--    :new.id := paciente_id_seq.nextval;
+--END;
+--/
+
+--CREATE SEQUENCE rrhh_id_seq START WITH 1 ;
+
+--CREATE OR REPLACE TRIGGER rrhh_id_trg BEFORE
+--    INSERT ON rrhh
+--    FOR EACH ROW
+--    WHEN ( new.id IS NULL )
+--BEGIN
+--    :new.id := rrhh_id_seq.nextval;
+--END;
+--/
+
+--CREATE SEQUENCE tutor_id_seq START WITH 1;
+
+--CREATE OR REPLACE TRIGGER tutor_id_trg BEFORE
+--    INSERT ON tutor
+--    FOR EACH ROW
+--    WHEN ( new.id IS NULL )
+--BEGIN
+--    :new.id := tutor_id_seq.nextval;
+--END;
+--/
+
+--CREATE SEQUENCE ubicacion_id_seq START WITH 1 ;
+
+--CREATE OR REPLACE TRIGGER ubicacion_id_trg BEFORE
+--    INSERT ON ubicacion
+--    FOR EACH ROW
+--    WHEN ( new.id IS NULL )
+--BEGIN
+--    :new.id := ubicacion_id_seq.nextval;
+--END;
+--/
+
+--CREATE SEQUENCE videollamada_id_seq START WITH 1 ;
+
+--CREATE OR REPLACE TRIGGER videollamada_id_trg BEFORE
+--    INSERT ON videollamada
+--    FOR EACH ROW
+--    WHEN ( new.id IS NULL )
+--BEGIN
+--    :new.id := videollamada_id_seq.nextval;
+--END;

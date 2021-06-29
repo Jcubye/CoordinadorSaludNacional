@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="664C5CD4-CC58-FFD1-B0D9-487194B21B35" name="ESP_RRHH">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 09:42:50 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="D7642DB2-0E8A-C2EE-35B5-64CDE9E21647">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 09:45:28 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha" id="D00F3EE5-C35E-470D-9271-03BF08CBFE42">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 09:45:28 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESPECIALIDAD_id" id="D123F6E3-6916-75B0-8926-CEE5280C6E22">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 10:13:26 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="22FA5B16-0A8A-89D8-AB5B-5C3EF8FD879A" referredColumn="83046DFB-FF8E-6A1D-865E-710D0B75DE86"/>
+</associations>
+</Column>
+<Column name="RRHH_id" id="24E1E353-29C1-51A6-98ED-D658C52B8D1C">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 10:13:37 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DF32AE60-20E9-A079-A75F-D90A4E485324" referredColumn="ECC7E3E3-F068-21E6-CF9E-A50FA1F4CBAC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D0A9F068-C33C-BD52-FA82-1D5321AA012E" name="ESP_RRHH_PK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 09:45:28 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D7642DB2-0E8A-C2EE-35B5-64CDE9E21647"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="97F0A552-E83D-5058-F359-9A5C5C49D9E4" name="ESP_RRHH_ESPECIALIDAD_FK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 10:13:26 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D123F6E3-6916-75B0-8926-CEE5280C6E22"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0EF9A9B2-948E-4970-D671-61611334E9B9" name="ESP_RRHH_RRHH_FK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 10:13:37 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="24E1E353-29C1-51A6-98ED-D658C52B8D1C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

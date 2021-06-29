@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="STOCK_ARTICULO_FK" directorySegmentName="seg_0" id="3F563777-E4CD-A8A8-C2A4-7690B537DF04">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 12:18:29 UTC</createdTime>
+<generatorID>AA0B3C13-9124-E7AF-24AB-7161C724BE5D</generatorID>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<engineerTo>
+<item key="37C23608-2A27-97D9-64A6-7DEFA12A4062" value="true"/>
+</engineerTo>
+<sourcePk>CAA2D96D-E0D6-233F-A843-7CE1D172B076</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>94B6DA70-D427-E82F-103C-15F5B8007455</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>9B9EBF63-4779-51E3-7AA0-FCB2177E9936</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

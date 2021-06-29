@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="331EDA83-6885-CD03-DD6C-8D27515485B0" containerWithKeyObject="B6B67D8D-4554-8692-5221-E18156AE13D2" localFKIndex="F168C136-F1AB-0B55-006C-0921E3ACFD2C" name="TIPO_TEN_TECNICO_ENFERMERIA_FK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 15:29:51 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<referredTableLongName>TECNICO_ENFERMERIA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2DA8AF55-3508-B622-4C85-A4F98F70DD16</referredTableID>
+<keyObject>3BADF01A-5E58-39E9-C8D9-8C15FBCB0CCA</keyObject>
+<referredKeyID>3BADF01A-5E58-39E9-C8D9-8C15FBCB0CCA</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ten</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0B81A176-ABD1-E7E7-C6C8-9B7393B956D4" name="OBJETOS_PACIENTE">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 13:39:35 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<ordsAlias>table_13</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_objetos_cliente" id="62C5BC02-6D0A-1AA8-0851-3FC7269D579C">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 13:52:10 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="26FFD0B4-DBFC-ADCC-8185-80102F2C4038">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 13:52:10 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cantidad" id="C62D37DE-75BF-B7B2-F286-E0688E4A9367">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 13:52:10 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prioridad" id="DED864A2-A534-B173-C349-101EA30D6E5D">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 13:52:10 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AC2B1D6E-5CEE-4EB3-A49D-B578C2AA10D1" name="OBJETOS_PACIENTE_PK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 15:01:24 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="62C5BC02-6D0A-1AA8-0851-3FC7269D579C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

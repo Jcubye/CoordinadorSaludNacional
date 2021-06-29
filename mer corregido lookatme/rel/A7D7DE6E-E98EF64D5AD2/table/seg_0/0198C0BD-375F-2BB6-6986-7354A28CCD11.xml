@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0198C0BD-375F-2BB6-6986-7354A28CCD11" name="PACIENTE">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 09:43:48 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_paciente" id="7E7056CB-B021-8A81-E630-EEE3DC089E8C">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 09:52:49 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rut" id="2052D3CA-358D-4BBD-CC6A-73DA869D534A">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 09:52:49 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="ADB9CDE5-9C21-B800-B366-F016EA296FB1">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 09:53:50 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefono" id="85D1930A-595D-2B7A-A213-566A2EC7D837">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 12:25:26 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="direccion" id="B306B052-B9F0-D1BB-3D92-398A2F3E1251">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 12:23:45 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="comuna" id="C75CEE08-2F5F-875F-DFF7-8AA6B78E9D2C">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 12:24:39 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="region" id="6317558E-6833-892E-E5F6-80DC425B7E2B">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 12:24:39 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TUTOR_id_tutor" id="9F820885-D56E-5849-CD4C-31D795E42282">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 09:57:01 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="27ECC08C-1A3C-6898-E2D3-72F8AEFC87DF" referredColumn="D45D200E-B75F-1204-9D51-C10B27AAB13F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="664A2DA8-B236-9A50-8135-689D4053B585" name="PACIENTE_PK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 12:37:31 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E7056CB-B021-8A81-E630-EEE3DC089E8C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AA30F326-37B6-6C2F-B2C1-BB98C6D8A241" name="PACIENTE_TUTOR_FK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 09:57:01 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9F820885-D56E-5849-CD4C-31D795E42282"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="EQUIPO_MEDICO_RRHH_FK" directorySegmentName="seg_0" id="FC8ED37A-03D9-08D3-4ED5-2BD9BFE8707D">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 12:18:28 UTC</createdTime>
+<generatorID>EFB467D1-4232-285C-5104-8CEA86C24648</generatorID>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<engineerTo>
+<item key="37C23608-2A27-97D9-64A6-7DEFA12A4062" value="true"/>
+</engineerTo>
+<sourcePk>057B8FCE-9AA1-6487-233B-593EF0F8CD00</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A81D631D-9F20-43E3-1CCF-436BEA91D749</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E7E45232-73DD-C3DE-2540-BB47E7790261</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

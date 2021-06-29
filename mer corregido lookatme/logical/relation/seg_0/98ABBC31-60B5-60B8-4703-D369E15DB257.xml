@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ESP_RRHH_ESPECIALIDAD_FK" directorySegmentName="seg_0" id="98ABBC31-60B5-60B8-4703-D369E15DB257">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 12:18:28 UTC</createdTime>
+<generatorID>92582B28-660A-CE70-B87F-A33EFA7D17CF</generatorID>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<engineerTo>
+<item key="37C23608-2A27-97D9-64A6-7DEFA12A4062" value="true"/>
+</engineerTo>
+<sourcePk>1AC6C1CE-63DD-2ED0-A584-E676083F4B06</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>EADC605D-1F2F-5CF0-6432-4BF6D4403149</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>54719936-C14C-3477-0736-39DD99E054A8</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

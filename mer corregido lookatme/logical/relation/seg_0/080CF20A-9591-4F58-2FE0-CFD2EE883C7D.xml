@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="HOSPITALIZACION_UBICACION_FK" directorySegmentName="seg_0" id="080CF20A-9591-4F58-2FE0-CFD2EE883C7D">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 12:18:28 UTC</createdTime>
+<generatorID>FD04CB0C-2269-EE0D-3B63-43E7638E70AD</generatorID>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<engineerTo>
+<item key="37C23608-2A27-97D9-64A6-7DEFA12A4062" value="true"/>
+</engineerTo>
+<sourcePk>0368D69D-6DF8-468D-D180-15197289CBEB</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6A649DCC-9988-22E1-9646-8568FE5EE1BA</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>09ECBC89-376F-21A1-DF2B-BD2136C8C2A5</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,73 @@
+--CREAR CUENTA ADMIN
+--CREAR DPTO ADMINISTRACION
+USE [LookAtMe]
+GO
+
+INSERT INTO dbo.departamento
+           (id
+           ,nombre)
+     VALUES
+           (0,
+           'Administracion')
+GO
+
+USE [LookAtMe]
+GO
+
+INSERT INTO dbo.cargo
+           (id
+           ,nombre)
+     VALUES
+           (0,
+           'Administrador',
+		   '05-24-2021',
+		   'Aministrador de la plataforma',
+		   'Activo',
+		   0)
+GO
+--CREAR CARGO ADMINISTRADOR
+USE [LookAtMe]
+GO
+
+INSERT INTO dbo.cargo
+           (id
+           ,nombre,
+		   fecha_inicio,
+		   descripcion,
+		   estado,
+		   departamento_id)
+     VALUES
+           (0,
+           'Administrador',
+		    '20210524',
+		   'Aministrador de la plataforma',
+		   'Activo',
+		   0)
+GO
+--CREAR USUARIO ADMINISTRADOR
+USE [LookAtMe]
+GO
+
+INSERT INTO dbo.rrhh
+           (id,
+		   rut,
+		   clave,
+		   estado,
+		   nombre,
+		   apellido,
+		   fecha_nac,
+		   telefono,
+		   correo,
+		   cargo_id)
+     VALUES
+           (0,
+           '10.205.240-4',
+		    'elguru123',
+			'activo',
+			'Armando',
+			'Tamponi',
+			'19670221',
+			'+56911223344',
+			'elguru@elguru.cl',
+			0)
+GO

@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="65C5CD7E-F091-285E-B360-A6C0E4ED7A4C" name="DEPARTAMENTO">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 11:41:22 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<ordsAlias>table_13</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="3B09EA82-74CF-8CC5-7C73-E5A174888463">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 11:41:54 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="582192F4-1F5E-AF44-8A89-71CA42EA3612">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 11:41:54 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="145BDB1F-9D60-50A3-FE68-5BF3B4BE5EA3" name="DEPARTAMENTO_PK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 11:42:25 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3B09EA82-74CF-8CC5-7C73-E5A174888463"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

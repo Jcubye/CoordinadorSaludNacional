@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9BBF8302-42FA-E5BE-CB63-43FA9B59BA6A" name="ESPECIALIDAD">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 15:39:42 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="E8B5061D-ABF3-6F81-ED78-064D08E9D932">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 15:57:27 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="99066A97-94E6-A9E8-44EB-5000EFAC656C">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 16:00:57 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5FEE94DC-520A-6B37-3295-CD530CD47D07" name="ESPECIALIDAD_PK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 15:59:57 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E8B5061D-ABF3-6F81-ED78-064D08E9D932"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

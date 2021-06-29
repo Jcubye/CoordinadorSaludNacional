@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="92582B28-660A-CE70-B87F-A33EFA7D17CF" containerWithKeyObject="776F22BB-CBF8-126E-5843-EFD72D862A42" localFKIndex="56C40DC9-67D9-9B33-EE3C-BDA76E7E7B30" name="ESP_RRHH_ESPECIALIDAD_FK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 16:00:03 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<referredTableLongName>ESPECIALIDAD</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9BBF8302-42FA-E5BE-CB63-43FA9B59BA6A</referredTableID>
+<keyObject>5FEE94DC-520A-6B37-3295-CD530CD47D07</keyObject>
+<referredKeyID>5FEE94DC-520A-6B37-3295-CD530CD47D07</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

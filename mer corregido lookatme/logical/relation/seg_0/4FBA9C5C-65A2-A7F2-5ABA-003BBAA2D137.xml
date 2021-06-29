@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="EQUIPO_MEDICO_HOSPITALIZACION_FK" directorySegmentName="seg_0" id="4FBA9C5C-65A2-A7F2-5ABA-003BBAA2D137">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 12:18:28 UTC</createdTime>
+<generatorID>843569B7-D077-2B75-841D-A63075C3FAE1</generatorID>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<engineerTo>
+<item key="37C23608-2A27-97D9-64A6-7DEFA12A4062" value="true"/>
+</engineerTo>
+<sourcePk>547CAA97-9543-E221-22F3-2A1367962426</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>09ECBC89-376F-21A1-DF2B-BD2136C8C2A5</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E7E45232-73DD-C3DE-2540-BB47E7790261</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

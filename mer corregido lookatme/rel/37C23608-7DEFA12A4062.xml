@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="MER LookAtMe" id="37C23608-2A27-97D9-64A6-7DEFA12A4062" mainViewID="132310F3-9E00-AD3E-B06E-7F1AF18B5C30">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 15:39:23 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<shouldBeOpen>true</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+</relationalModel>

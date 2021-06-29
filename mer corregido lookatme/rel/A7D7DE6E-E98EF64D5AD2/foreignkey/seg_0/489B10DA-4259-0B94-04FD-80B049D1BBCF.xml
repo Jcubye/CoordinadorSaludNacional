@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="489B10DA-4259-0B94-04FD-80B049D1BBCF" containerWithKeyObject="1E2779C8-A7EC-2320-D28E-751602A09958" localFKIndex="3D093F8A-DAC6-48E2-28B6-AD537EBA070D" name="FUNCIONALIDAD_COMUNICACION_FK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 15:01:48 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<referredTableLongName>COMUNICACION</referredTableLongName>
+<arc>4A2E93D4-4300-4038-333D-203A012FE037</arc>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8309713D-44CA-EE6C-8D65-50731D8E196B</referredTableID>
+<keyObject>41A44E81-4F4E-D464-9922-0F93C0E45076</keyObject>
+<referredKeyID>41A44E81-4F4E-D464-9922-0F93C0E45076</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id_trazabilidad</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

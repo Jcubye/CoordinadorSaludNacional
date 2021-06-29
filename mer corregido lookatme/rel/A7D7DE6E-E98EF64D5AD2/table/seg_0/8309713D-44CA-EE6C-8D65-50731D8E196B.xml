@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8309713D-44CA-EE6C-8D65-50731D8E196B" name="COMUNICACION">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 14:02:32 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<ordsAlias>table_12</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_trazabilidad" id="127CA25D-B78A-5921-713A-2E9DE97B023A">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 14:02:32 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="detalle" id="9E9FF267-F33E-9D3A-5F05-91DDB8C26D60">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 14:02:32 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="41A44E81-4F4E-D464-9922-0F93C0E45076" name="TRAZABILIDADv1_PK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 14:02:32 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="127CA25D-B78A-5921-713A-2E9DE97B023A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

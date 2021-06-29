@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="11D4598C-054E-DE6D-1C74-05ACF4281EF4" name="ESPECIALIDAD_DOCTOR">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 09:45:22 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_especialidad" id="672FA21D-F236-0E6A-BAD0-FDC9D9C9DE41">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 13:10:52 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="0ED09DD8-55EB-8E54-CBA1-C7C2EA9EEC5C">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 13:10:52 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DOCTOR_id_doctor" id="491C626E-CCCD-6917-0592-8E3C16838ABE">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 13:19:24 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2720F88A-5E4B-8134-5001-DD707EB8EFE1" referredColumn="76F6B4E8-6286-A5C6-45F1-ABD31D5F3B14"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4299EB55-9DC6-7357-9FC7-8F6EA8C3AB2F" name="ESPECIALIDAD_DOCTOR_PK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 13:10:52 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="672FA21D-F236-0E6A-BAD0-FDC9D9C9DE41"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F01168CB-2AD2-3CD9-C7BB-B48A058E484C" name="ESPECIALIDAD_DOCTOR_DOCTOR_FK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 13:19:24 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="491C626E-CCCD-6917-0592-8E3C16838ABE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

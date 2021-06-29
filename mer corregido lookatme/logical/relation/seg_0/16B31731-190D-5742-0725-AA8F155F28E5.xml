@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="RRHH_CARGO_FK" directorySegmentName="seg_0" id="16B31731-190D-5742-0725-AA8F155F28E5">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 12:18:28 UTC</createdTime>
+<generatorID>03FB6AED-551B-77C8-5CFB-17ECF831F700</generatorID>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<engineerTo>
+<item key="37C23608-2A27-97D9-64A6-7DEFA12A4062" value="true"/>
+</engineerTo>
+<sourcePk>60ECFED3-7912-D8F1-58D6-286BB451275D</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A2430441-DCE3-77F5-F0A5-61A0988DFDAF</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A81D631D-9F20-43E3-1CCF-436BEA91D749</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

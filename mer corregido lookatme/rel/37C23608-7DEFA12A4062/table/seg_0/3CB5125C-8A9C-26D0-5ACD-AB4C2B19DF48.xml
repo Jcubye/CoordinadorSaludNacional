@@ -1,0 +1,141 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3CB5125C-8A9C-26D0-5ACD-AB4C2B19DF48" name="HOSPITALIZACION">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 15:41:39 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="B16F8E6A-C0A9-BA36-CD9A-20CE61F830D2">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 15:54:14 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_ingreso" id="9A3F5647-555B-8A90-FE98-5B580E82A507">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 05:08:07 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estado" id="F9684E83-F992-8026-EC53-0A8766360BC9">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 11:39:42 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_alta" id="C0C90929-F4C1-4E0C-E303-E674F21FC521">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 05:09:40 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="criticidad" id="4F3A3279-B218-9DE1-BA54-1FB47D1C5EFC">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 05:09:40 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="detalles" id="9DB3F5AF-D518-F99E-2BE3-10E315644691">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 05:09:40 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PACIENTE_ID" id="69F086BE-01FB-56AC-9E75-558A16447BB7">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 04:41:08 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B5317DDA-51CE-F1BA-DC3D-520F4985F3FB" referredColumn="B87A86AA-E7D2-0833-1197-10DB381F846D"/>
+</associations>
+</Column>
+<Column name="UBICACION_id" id="5F26FBF8-A1B9-2515-0BB8-8DD5160BC213">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 04:41:28 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FD04CB0C-2269-EE0D-3B63-43E7638E70AD" referredColumn="880F432F-1AF8-FC2B-6501-DDEE2E79891D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="940361B6-049A-FF5E-EC04-E9C6691E5853" name="HOSPITALIZACION_PK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-21 15:54:47 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B16F8E6A-C0A9-BA36-CD9A-20CE61F830D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="18B2D805-47EA-8389-5832-D3112A1CF71A" name="HOSPITALIZACION_PACIENTE_FK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 04:41:08 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="69F086BE-01FB-56AC-9E75-558A16447BB7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0B94474C-83AD-43E7-FB33-733C41013262" name="HOSPITALIZACION_UBICACION_FK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 04:41:28 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5F26FBF8-A1B9-2515-0BB8-8DD5160BC213"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

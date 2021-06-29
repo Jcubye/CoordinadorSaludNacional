@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="64B92E3A-700D-961A-408F-3BB3C305D2A0" containerWithKeyObject="E5F61B63-C404-DAA3-CD91-B595B8E3126C" localFKIndex="9F22C4CF-D7DE-990D-1DE3-6AC6C2EFC5FF" name="CREDENCIAL_RECEPCIONISTA_FK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 13:00:17 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<referredTableLongName>RECEPCIONISTA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>AD69A98A-D6F6-F5CA-8AD9-8EEDDF300461</referredTableID>
+<keyObject>7C3B526D-11DD-F803-CC67-B23DEFD579F9</keyObject>
+<referredKeyID>7C3B526D-11DD-F803-CC67-B23DEFD579F9</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_recepcionista</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

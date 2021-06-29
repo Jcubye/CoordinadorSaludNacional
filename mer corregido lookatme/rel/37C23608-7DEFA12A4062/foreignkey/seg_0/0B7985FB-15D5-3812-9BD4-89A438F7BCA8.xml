@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0B7985FB-15D5-3812-9BD4-89A438F7BCA8" containerWithKeyObject="7EE35B6D-D0C3-B313-EE66-F6C28FE176AB" localFKIndex="7C3111AA-F30E-6DA0-0748-F6C7091FECE4" name="STOCK_HOSPITALIZACION_FK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 04:41:40 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<referredTableLongName>HOSPITALIZACION</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3CB5125C-8A9C-26D0-5ACD-AB4C2B19DF48</referredTableID>
+<keyObject>940361B6-049A-FF5E-EC04-E9C6691E5853</keyObject>
+<referredKeyID>940361B6-049A-FF5E-EC04-E9C6691E5853</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

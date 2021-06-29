@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="78706B61-9CD6-B201-D76A-56775C27CA05" name="TIPO_ENFERMERA">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 09:44:55 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_tipo_enfermeria" id="051C42A7-47F8-FB72-C0E0-08462645B981">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 15:10:27 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="697D853A-144C-2697-8492-692500B99301">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 15:09:28 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ENFERMERA_id_enfemera" id="FD61576A-6442-9771-3D4B-C24848394F2B">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 15:25:20 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="214BC232-A94F-D25B-2F8B-CB0560D79587" referredColumn="FDE10B24-0D6D-DB46-F596-765033D68B10"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="37785D64-D519-0173-2E75-4BAFA73ECCED" name="TIPO ENFERMERA_PK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 15:10:27 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="051C42A7-47F8-FB72-C0E0-08462645B981"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D8146F10-5BC6-69E8-9659-4894E0C38C7A" name="TIPO ENFERMERA_ENFERMERA_FK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 15:25:20 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD61576A-6442-9771-3D4B-C24848394F2B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

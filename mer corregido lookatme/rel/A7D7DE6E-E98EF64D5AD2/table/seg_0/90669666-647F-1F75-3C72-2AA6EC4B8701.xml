@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="90669666-647F-1F75-3C72-2AA6EC4B8701" name="TRAZABILIDAD">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 13:30:41 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<ordsAlias>table_12</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_trazabilidad" id="D73AF2B2-CA3D-5CAC-7947-8C5B6D593AF3">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 13:37:40 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="detalle" id="60AD88DA-C153-B5E3-E0F0-53BA22471C5C">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 13:37:40 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="38D8EFFA-1542-DCF0-3DA5-11EC8C8B0078" name="TRAZABILIDAD_PK">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-10 13:37:40 UTC</createdTime>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D73AF2B2-CA3D-5CAC-7947-8C5B6D593AF3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

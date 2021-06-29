@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="PACIENTE_TUTOR_FK" directorySegmentName="seg_0" id="124FD942-935B-0E47-FEF2-C6839B6F0A9A">
+<createdBy>Jcubye</createdBy>
+<createdTime>2021-05-22 12:18:28 UTC</createdTime>
+<generatorID>C40CE236-1077-CF78-C32F-C170CAA89155</generatorID>
+<ownerDesignName>mer corregido lookatme</ownerDesignName>
+<engineerTo>
+<item key="37C23608-2A27-97D9-64A6-7DEFA12A4062" value="true"/>
+</engineerTo>
+<sourcePk>EB4F0B2C-0D7A-78B8-724A-8F765334077E</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F52F2475-9AD7-F9A4-4756-589150E6CD4F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>5A67C867-73D3-4C4C-5A3D-D2761A256138</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
