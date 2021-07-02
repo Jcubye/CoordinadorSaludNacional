@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
@@ -72,11 +73,35 @@
     <Compile Include="PantallaHomePersonal.Designer.cs">
       <DependentUpon>PantallaHomePersonal.cs</DependentUpon>
     </Compile>
+    <Compile Include="PantallaHomeTutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaHomeTutor.Designer.cs">
+      <DependentUpon>PantallaHomeTutor.cs</DependentUpon>
+    </Compile>
     <Compile Include="PantallaListadoDepartamento.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PantallaListadoDepartamento.Designer.cs">
       <DependentUpon>PantallaListadoDepartamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaListarPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaListarPaciente.Designer.cs">
+      <DependentUpon>PantallaListarPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaListarPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaListarPersonal.Designer.cs">
+      <DependentUpon>PantallaListarPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaListarTutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaListarTutor.Designer.cs">
+      <DependentUpon>PantallaListarTutor.cs</DependentUpon>
     </Compile>
     <Compile Include="PantallaLoginPersonal.cs">
       <SubType>Form</SubType>
@@ -96,6 +121,18 @@
     <Compile Include="PantallaRegistroDepartamento.Designer.cs">
       <DependentUpon>PantallaRegistroDepartamento.cs</DependentUpon>
     </Compile>
+    <Compile Include="PantallaRegistroPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaRegistroPaciente.Designer.cs">
+      <DependentUpon>PantallaRegistroPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaRegistroPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaRegistroPersonal.Designer.cs">
+      <DependentUpon>PantallaRegistroPersonal.cs</DependentUpon>
+    </Compile>
     <Compile Include="PantallaRegistroTutor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,8 +147,20 @@
     <EmbeddedResource Include="PantallaHomePersonal.resx">
       <DependentUpon>PantallaHomePersonal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PantallaHomeTutor.resx">
+      <DependentUpon>PantallaHomeTutor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PantallaListadoDepartamento.resx">
       <DependentUpon>PantallaListadoDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaListarPaciente.resx">
+      <DependentUpon>PantallaListarPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaListarPersonal.resx">
+      <DependentUpon>PantallaListarPersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaListarTutor.resx">
+      <DependentUpon>PantallaListarTutor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PantallaLoginPersonal.resx">
       <DependentUpon>PantallaLoginPersonal.cs</DependentUpon>
@@ -121,6 +170,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PantallaRegistroDepartamento.resx">
       <DependentUpon>PantallaRegistroDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaRegistroPaciente.resx">
+      <DependentUpon>PantallaRegistroPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaRegistroPersonal.resx">
+      <DependentUpon>PantallaRegistroPersonal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PantallaRegistroTutor.resx">
       <DependentUpon>PantallaRegistroTutor.cs</DependentUpon>

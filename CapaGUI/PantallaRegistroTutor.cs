@@ -155,5 +155,38 @@ namespace CapaGUI
             this.btnRegistrar.Text = "Nuevo";
             this.deshabilitar();
         }
+
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            PantallaListarTutor pListarTutor = new PantallaListarTutor();
+            pListarTutor.ShowDialog();
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.btnActualizar.Text= "Modificar";
+                this.btnActualizar.Enabled = false;
+                this.btnEliminar.Enabled = false;
+                this.btnListar.Enabled = false;
+                this.btnPrimero.Enabled = false;
+                this.btnAnterior.Enabled = false;
+                this.btnSiguiente.Enabled = false;
+                this.btnUltimo.Enabled = false;
+                this.btnCancelar.Text = "Cancelar";
+
+            }
+            catch(Exception ex)
+            {
+
+            }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            System.GC.Collect();
+        }
     }
 }

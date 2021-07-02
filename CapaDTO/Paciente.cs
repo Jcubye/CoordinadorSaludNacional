@@ -18,7 +18,7 @@ namespace CapaDTO
         private string comuna;
         private string region;
         private string telefono;
-        private string cantecedentes;
+        private string antecedentes;
         private int id_tutor;
 
         public int Id { get => id; set => id = value; }
@@ -31,7 +31,7 @@ namespace CapaDTO
         public string Comuna { get => comuna; set => comuna = value; }
         public string Region { get => region; set => region = value; }
         public string Telefono { get => telefono; set => telefono = value; }
-        public string Cantecedentes { get => cantecedentes; set => cantecedentes = value; }
+        public string Antecedentes { get => antecedentes; set => antecedentes = value; }
         public int Id_tutor { get => id_tutor; set => id_tutor = value; }
     }
 }

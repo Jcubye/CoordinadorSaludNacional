@@ -28,5 +28,38 @@ namespace CapaGUI
             PantallaRegistroDepartamento pRegistroDepartamento = new PantallaRegistroDepartamento();
             pRegistroDepartamento.ShowDialog();
         }
+
+        private void personalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PantallaRegistroTutor pRegistroTutor = new PantallaRegistroTutor();
+            pRegistroTutor.ShowDialog();
+        }
+
+        private void pacienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PantallaRegistroPaciente pRegistroPaciente = new PantallaRegistroPaciente();
+            pRegistroPaciente.ShowDialog();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PantallaHomePersonal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tutorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PantallaRegistroPersonal pRegistroPersonal = new PantallaRegistroPersonal();
+            pRegistroPersonal.ShowDialog();
+        }
     }
 }

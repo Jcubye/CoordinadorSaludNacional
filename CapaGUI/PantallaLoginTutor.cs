@@ -19,8 +19,8 @@ namespace CapaGUI
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            PantallaRegistroTutor pRegistroTutor = new PantallaRegistroTutor();
-            pRegistroTutor.ShowDialog();
+            PantallaHomeTutor pHomeTutor = new PantallaHomeTutor();
+            pHomeTutor.ShowDialog();
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
