@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace CapaNegocio
 {
-    class NegocioCargo
+    public class NegocioCargo
     {
         private ConexionSQLSERVER conec = new ConexionSQLSERVER();
 

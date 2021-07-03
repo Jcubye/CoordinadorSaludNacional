@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace CapaNegocio
 {
-    class NegocioPaciente
+    public class NegocioPaciente
     {
         private ConexionSQLSERVER conec = new ConexionSQLSERVER();
 
@@ -40,119 +40,134 @@ namespace CapaNegocio
             this.Conec.conectar();
         }
 
-        public void actualizarPersonal(RRHH rrhh)
+        public void actualizarPaciente(Paciente paciente)
         {
             this.configurarConexion();
-            this.Conec.CadenaSQL = "UPDATE dbo.rrhh SET rut = '" + rrhh.Rut +
-                ", clave = '" + rrhh.Clave +
-                ", nombre = '" + rrhh.Nombre +
-                ", apellido = '" + rrhh.Apellido +
-                ", fecha_nac = '" + rrhh.Fecha_nac +
-                ", telefono = '" + rrhh.Telefono +
-                ", correo = '" + rrhh.Correo +
-                ", cargo_id = '" + rrhh.Cargo_id +
-                "' WHERE rut = '" + rrhh.Rut + "';";
+            this.Conec.CadenaSQL = "UPDATE dbo.rrhh SET rut = '" + paciente.Rut +
+                ", nombre = '" + paciente.Nombre +
+                ", apellido = '" + paciente.Apellido +
+                ", fecha_nacimiento = '" + paciente.Fecha_nac +
+                ", genero = '" + paciente.Genero +
+                ", direccion = '" + paciente.Telefono +
+                ", comuna = '" + paciente.Comuna +
+                ", region = '" + paciente.Region +
+                ", telefono = '" + paciente.Telefono +
+                ", antecedentes = '" + paciente.Antecedentes +
+                ", tuto_id = '" + paciente.Id_tutor +
+                "' WHERE rut = '" + paciente.Rut + "';";
             this.Conec.EsSelect = false;
             this.Conec.conectar();
         }
-        public void eliminarPersonal(String rut)
+        public void eliminarPaciente(String rut)
         {
             this.configurarConexion();
-            this.Conec.CadenaSQL = "DELETE dbo.rrhh WHERE rut = '" +
+            this.Conec.CadenaSQL = "DELETE dbo.paciente WHERE rut = '" +
                 rut + "';";
             this.Conec.EsSelect = false;
             this.Conec.conectar();
         }
 
-        public DataSet consultarPersonal()
+        public DataSet consultaPaciente()
         {
             this.configurarConexion();
             //es necesario referenciar la tabla sino no se cae
-            this.Conec.NombreTabla = "rrhh";
-            this.Conec.CadenaSQL = "SELECT * FROM dbo.rrhh;";
+            this.Conec.NombreTabla = "pacoemte";
+            this.Conec.CadenaSQL = "SELECT * FROM dbo.paciente;";
             this.Conec.EsSelect = true;
             this.Conec.conectar();
             return this.Conec.DbDataSet;
         }
 
-        public RRHH buscaPersonal(String rut)
+        public Paciente buscaPaciente(String rut)
         {
             this.configurarConexion();
-            this.Conec.NombreTabla = "rrhh";
-            this.Conec.CadenaSQL = "SELECT * FROM dbo.rrhh WHERE rut = '" +
+            this.Conec.NombreTabla = "paciente";
+            this.Conec.CadenaSQL = "SELECT * FROM dbo.paciente WHERE rut = '" +
                                     rut + "';";
             this.Conec.EsSelect = true;
             this.Conec.conectar();
             DataTable dt = new DataTable();
             dt = this.Conec.DbDataSet.Tables[0];
 
-            RRHH auxPersonal = new RRHH();
+            Paciente auxPaciente = new Paciente();
             try
             {
-                auxPersonal.Id = (int)dt.Rows[0]["id"];
-                auxPersonal.Rut = (String)dt.Rows[0]["rut"];
-                auxPersonal.Clave = (String)dt.Rows[0]["clave"];
-                auxPersonal.Nombre = (String)dt.Rows[0]["nombre"];
-                auxPersonal.Apellido = (String)dt.Rows[0]["apellido"];
-                auxPersonal.Fecha_nac = (String)dt.Rows[0]["fecha_nac"];
-                auxPersonal.Telefono = (String)dt.Rows[0]["telefono"];
-                auxPersonal.Correo = (String)dt.Rows[0]["correo"];
-                auxPersonal.Cargo_id = (int)dt.Rows[0]["cargo_id"];
+                auxPaciente.Id = (int)dt.Rows[0]["id"];
+                auxPaciente.Rut = (String)dt.Rows[0]["rut"];
+                auxPaciente.Nombre = (String)dt.Rows[0]["nombre"];
+                auxPaciente.Apellido = (String)dt.Rows[0]["apellido"];
+                auxPaciente.Fecha_nac = (String)dt.Rows[0]["fecha_nacimiento"];
+                auxPaciente.Genero = (String)dt.Rows[0]["genero"];
+                auxPaciente.Direccion = (String)dt.Rows[0]["direccion"];
+                auxPaciente.Comuna = (String)dt.Rows[0]["comuna"];
+                auxPaciente.Region = (String)dt.Rows[0]["region"];
+                auxPaciente.Telefono = (String)dt.Rows[0]["telefono"];
+                auxPaciente.Antecedentes = (String)dt.Rows[0]["antecedentes"];
+                auxPaciente.Id_tutor = (int)dt.Rows[0]["tutor_id"];
             }
             catch (Exception ex)
             {
-                auxPersonal.Id = 0;
-                auxPersonal.Rut = String.Empty;
-                auxPersonal.Clave = String.Empty;
-                auxPersonal.Nombre = String.Empty;
-                auxPersonal.Apellido = String.Empty;
-                auxPersonal.Fecha_nac = String.Empty;
-                auxPersonal.Telefono = String.Empty;
-                auxPersonal.Correo = String.Empty;
-                auxPersonal.Cargo_id = 0;
+                auxPaciente.Id = 0;
+                auxPaciente.Rut = String.Empty;
+                auxPaciente.Nombre = String.Empty; ;
+                auxPaciente.Apellido = String.Empty; ;
+                auxPaciente.Fecha_nac = String.Empty; ;
+                auxPaciente.Genero = String.Empty; ;
+                auxPaciente.Direccion = String.Empty; ;
+                auxPaciente.Comuna = String.Empty; ;
+                auxPaciente.Region = String.Empty; ;
+                auxPaciente.Telefono = String.Empty; ;
+                auxPaciente.Antecedentes = String.Empty; ;
+                auxPaciente.Id_tutor = 0;
             }
 
-            return auxPersonal;
+            return auxPaciente;
         }
 
 
-        public RRHH posicionPersonal(int fila)
+        public Paciente posicionPaciente(int fila)
         {
             this.configurarConexion();
-            this.Conec.CadenaSQL = "SELECT * FROM dbo.rrhh ;";
-            this.Conec.NombreTabla = "rrhh";
+            this.Conec.CadenaSQL = "SELECT * FROM dbo.paciente ;";
+            this.Conec.NombreTabla = "paciente";
             this.Conec.EsSelect = true;
             this.Conec.conectar();
             DataTable dt = new DataTable();
             dt = this.Conec.DbDataSet.Tables[0];
 
-            RRHH auxPersonal = new RRHH();
+            Paciente auxPaciente = new Paciente();
             try
             {
-                auxPersonal.Id = (int)dt.Rows[fila]["id"];
-                auxPersonal.Rut = (String)dt.Rows[fila]["rut"];
-                auxPersonal.Clave = (String)dt.Rows[fila]["clave"];
-                auxPersonal.Nombre = (String)dt.Rows[fila]["nombre"];
-                auxPersonal.Apellido = (String)dt.Rows[fila]["apellido"];
-                auxPersonal.Fecha_nac = (String)dt.Rows[fila]["fecha_nac"];
-                auxPersonal.Telefono = (String)dt.Rows[fila]["telefono"];
-                auxPersonal.Correo = (String)dt.Rows[fila]["correo"];
-                auxPersonal.Cargo_id = (int)dt.Rows[fila]["cargo_id"];
+                auxPaciente.Id = (int)dt.Rows[0]["id"];
+                auxPaciente.Rut = (String)dt.Rows[0]["rut"];
+                auxPaciente.Nombre = (String)dt.Rows[0]["nombre"];
+                auxPaciente.Apellido = (String)dt.Rows[0]["apellido"];
+                auxPaciente.Fecha_nac = (String)dt.Rows[0]["fecha_nacimiento"];
+                auxPaciente.Genero = (String)dt.Rows[0]["genero"];
+                auxPaciente.Direccion = (String)dt.Rows[0]["direccion"];
+                auxPaciente.Comuna = (String)dt.Rows[0]["comuna"];
+                auxPaciente.Region = (String)dt.Rows[0]["region"];
+                auxPaciente.Telefono = (String)dt.Rows[0]["telefono"];
+                auxPaciente.Antecedentes = (String)dt.Rows[0]["antecedentes"];
+                auxPaciente.Id_tutor = (int)dt.Rows[0]["tutor_id"];
             }
             catch (Exception ex)
             {
-                auxPersonal.Id = 0;
-                auxPersonal.Rut = String.Empty;
-                auxPersonal.Clave = String.Empty;
-                auxPersonal.Nombre = String.Empty;
-                auxPersonal.Apellido = String.Empty;
-                auxPersonal.Fecha_nac = String.Empty;
-                auxPersonal.Telefono = String.Empty;
-                auxPersonal.Correo = String.Empty;
-                auxPersonal.Cargo_id = 0;
+                auxPaciente.Id = 0;
+                auxPaciente.Rut = String.Empty;
+                auxPaciente.Nombre = String.Empty; ;
+                auxPaciente.Apellido = String.Empty; ;
+                auxPaciente.Fecha_nac = String.Empty; ;
+                auxPaciente.Genero = String.Empty; ;
+                auxPaciente.Direccion = String.Empty; ;
+                auxPaciente.Comuna = String.Empty; ;
+                auxPaciente.Region = String.Empty; ;
+                auxPaciente.Telefono = String.Empty; ;
+                auxPaciente.Antecedentes = String.Empty; ;
+                auxPaciente.Id_tutor = 0;
             }
 
-            return auxPersonal;
+            return auxPaciente;
         }
     }
 }
