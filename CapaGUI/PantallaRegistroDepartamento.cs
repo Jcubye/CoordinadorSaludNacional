@@ -200,7 +200,71 @@ namespace CapaGUI
 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
+            try
+            {
+                if (this.btnActualizar.Text == "Actualizar")
+                {
+                    this.limpiar();
+                    this.habilitar();
+                    this.mostrar();
+                    this.btnRegistrar.Enabled = false;
+                    this.btnEliminar.Enabled = false;
+                    this.btnListar.Enabled = false;
+                    this.btnPrimero.Enabled = false;
+                    this.btnAnterior.Enabled = false;
+                    this.btnSiguiente.Enabled = false;
+                    this.btnUltimo.Enabled = false;
+                    this.btnActualizar.Text = "Guardar";
+                    this.btnCancelar.Text = "Cancelar";
+                }
+                else
+                {
+                    ServiceDepartamento.ServicioDepartamentoSoapClient auxServiceDepartamento = new ServiceDepartamento.ServicioDepartamentoSoapClient();
+                    ServiceDepartamento.Departamento auxDepartamento = new ServiceDepartamento.Departamento();
+                    auxDepartamento.Id =int.Parse( this.txtId.Text);
+                    auxDepartamento.Nombre = this.txtNombre.Text;
 
+                    if (String.IsNullOrEmpty(this.txtNombre.Text))
+                    {
+                        MessageBox.Show("Debe ingresar Datos", "Salir");
+                    }
+                    else
+                    {
+                        //no valida si existe, pero en este caso no lo hara ya que Id no es ingresable y se autoincrementa
+                        //if (String.IsNullOrEmpty(auxServiceDepartamento.buscaDepartamento(auxDepartamento.Id).Nombre))
+                        //{
+                        //    MessageBox.Show("El Departamento ya existe", "System");
+                        //}
+                        //else
+                        //{
+                        //aca iria el grabar, si el dpto no existiera
+                        //}
+                        auxServiceDepartamento.actualizarDepartamento(auxDepartamento);
+
+                        MessageBox.Show("¡Datos Actualizados!", "System");
+                        this.deshabilitar();
+                        this.btnActualizar.Text = "Actualizar";
+                        this.btnRegistrar.Enabled = true; 
+                        this.btnActualizar.Enabled = true;
+                        this.btnEliminar.Enabled = true;
+                        this.btnListar.Enabled = true;
+                        this.btnPrimero.Enabled = true;
+                        this.btnAnterior.Enabled = true;
+                        this.btnSiguiente.Enabled = true;
+                        this.btnUltimo.Enabled = true;
+                        this.btnCancelar.Text = "Salir";
+                        this.mostrar();
+
+                    }
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Datos no Guardados" + ex.Message, "System");
+                this.limpiar();
+            }
         }
     }
 }
